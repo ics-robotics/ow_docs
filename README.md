@@ -1,2 +1,2 @@
-# ow_documentation
-Documentation for the OpenWalker project
+# ow_docs
+Documentation for the OpenWalker project.
