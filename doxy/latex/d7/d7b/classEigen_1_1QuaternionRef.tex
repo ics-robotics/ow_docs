@@ -1,0 +1,112 @@
+\hypertarget{classEigen_1_1QuaternionRef}{}\section{Eigen\+:\+:Quaternion\+Ref$<$ \+\_\+\+Derived $>$ Class Template Reference}
+\label{classEigen_1_1QuaternionRef}\index{Eigen\+::\+Quaternion\+Ref$<$ \+\_\+\+Derived $>$@{Eigen\+::\+Quaternion\+Ref$<$ \+\_\+\+Derived $>$}}
+
+
+The \hyperlink{classEigen_1_1QuaternionRef}{Quaternion\+Ref} class.  
+
+
+
+
+{\ttfamily \#include $<$quaternion\+\_\+ref.\+h$>$}
+
+Inheritance diagram for Eigen\+:\+:Quaternion\+Ref$<$ \+\_\+\+Derived $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{d7/d7b/classEigen_1_1QuaternionRef}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \+\_\+\+Derived {\bfseries Derived}\hypertarget{classEigen_1_1QuaternionRef_ae01d4bb6ac378f260ed60b076cadf7e8}{}\label{classEigen_1_1QuaternionRef_ae01d4bb6ac378f260ed60b076cadf7e8}
+
+\item 
+typedef Eigen\+::\+Quaternion\+Base$<$ \hyperlink{classEigen_1_1QuaternionRef}{Quaternion\+Ref}$<$ \+\_\+\+Derived $>$ $>$ {\bfseries Base}\hypertarget{classEigen_1_1QuaternionRef_a4eb09c1c2266a2a7d36fe6a8d9bd1f44}{}\label{classEigen_1_1QuaternionRef_a4eb09c1c2266a2a7d36fe6a8d9bd1f44}
+
+\item 
+typedef Eigen\+::internal\+::traits$<$ \hyperlink{classEigen_1_1QuaternionRef}{Quaternion\+Ref} $>$\+::Coefficients {\bfseries Coefficients}\hypertarget{classEigen_1_1QuaternionRef_a5f3aa5e5a4749058a47b2c491fc8adde}{}\label{classEigen_1_1QuaternionRef_a5f3aa5e5a4749058a47b2c491fc8adde}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classEigen_1_1QuaternionRef_a248478189cea730141b0a3b9d9dd9a63}{Quaternion\+Ref} (Derived \&ref, int start\+Row=0, int start\+Col=0)
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+Coefficients \& \hyperlink{classEigen_1_1QuaternionRef_ad181c3d0f58e30e4508c10f7c6bc8c73}{coeffs} ()
+\begin{DoxyCompactList}\small\item\em Get quaternion coefficients. \end{DoxyCompactList}\item 
+const Coefficients \& \hyperlink{classEigen_1_1QuaternionRef_a32775ef17d906112484443a31307052f}{coeffs} () const 
+\begin{DoxyCompactList}\small\item\em Get quaternion coefficients. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classEigen_1_1QuaternionRef_a29a95c2bb2683a0720d7b0e55a79ef56}{to\+String} () const \hypertarget{classEigen_1_1QuaternionRef_a29a95c2bb2683a0720d7b0e55a79ef56}{}\label{classEigen_1_1QuaternionRef_a29a95c2bb2683a0720d7b0e55a79ef56}
+
+\begin{DoxyCompactList}\small\item\em Conversion to std\+::string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Coefficients \hyperlink{classEigen_1_1QuaternionRef_a236621f8f2822fc2c9ef50069badf64f}{coeffs\+\_\+}\hypertarget{classEigen_1_1QuaternionRef_a236621f8f2822fc2c9ef50069badf64f}{}\label{classEigen_1_1QuaternionRef_a236621f8f2822fc2c9ef50069badf64f}
+
+\begin{DoxyCompactList}\small\item\em The quaternion coefficients in a Eigen\+::\+Block. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename \+\_\+\+Derived$>$\\*
+class Eigen\+::\+Quaternion\+Ref$<$ \+\_\+\+Derived $>$}
+
+The \hyperlink{classEigen_1_1QuaternionRef}{Quaternion\+Ref} class. 
+
+This class provides access to the quaternion elements within another Eigen type class. This Eigen type class has to provide/support the Eigen\+::\+Block access.
+
+We need this special type to get the behavior of Eigen\+::\+Quaternion in references where the source of the Quaternion elements is not a Quaternion itsself. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Eigen\+::\+Quaternion\+Ref@{Eigen\+::\+Quaternion\+Ref}!Quaternion\+Ref@{Quaternion\+Ref}}
+\index{Quaternion\+Ref@{Quaternion\+Ref}!Eigen\+::\+Quaternion\+Ref@{Eigen\+::\+Quaternion\+Ref}}
+\subsubsection[{\texorpdfstring{Quaternion\+Ref(\+Derived \&ref, int start\+Row=0, int start\+Col=0)}{QuaternionRef(Derived &ref, int startRow=0, int startCol=0)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Derived$>$ {\bf Eigen\+::\+Quaternion\+Ref}$<$ \+\_\+\+Derived $>$\+::{\bf Quaternion\+Ref} (
+\begin{DoxyParamCaption}
+\item[{Derived \&}]{ref, }
+\item[{int}]{start\+Row = {\ttfamily 0}, }
+\item[{int}]{start\+Col = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classEigen_1_1QuaternionRef_a248478189cea730141b0a3b9d9dd9a63}{}\label{classEigen_1_1QuaternionRef_a248478189cea730141b0a3b9d9dd9a63}
+
+
+Default Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ref} & the reference to storage Eigen object to access the elements of the quaternion via Eigen\+::\+Block.\\
+\hline
+{\em start\+Row} & the start index of the row for Eigen\+::\+Block.\\
+\hline
+{\em start\+Col} & the start index of the column for Eigen\+::\+Block. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Eigen\+::\+Quaternion\+Ref@{Eigen\+::\+Quaternion\+Ref}!coeffs@{coeffs}}
+\index{coeffs@{coeffs}!Eigen\+::\+Quaternion\+Ref@{Eigen\+::\+Quaternion\+Ref}}
+\subsubsection[{\texorpdfstring{coeffs()}{coeffs()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Derived$>$ Coefficients\& {\bf Eigen\+::\+Quaternion\+Ref}$<$ \+\_\+\+Derived $>$\+::coeffs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classEigen_1_1QuaternionRef_ad181c3d0f58e30e4508c10f7c6bc8c73}{}\label{classEigen_1_1QuaternionRef_ad181c3d0f58e30e4508c10f7c6bc8c73}
+
+
+Get quaternion coefficients. 
+
+This function is used internally by Eigen to get the coefficients for the Quaternion functionalities provided by Eigen\+::\+Quaternion\+Base. \index{Eigen\+::\+Quaternion\+Ref@{Eigen\+::\+Quaternion\+Ref}!coeffs@{coeffs}}
+\index{coeffs@{coeffs}!Eigen\+::\+Quaternion\+Ref@{Eigen\+::\+Quaternion\+Ref}}
+\subsubsection[{\texorpdfstring{coeffs() const }{coeffs() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Derived$>$ const Coefficients\& {\bf Eigen\+::\+Quaternion\+Ref}$<$ \+\_\+\+Derived $>$\+::coeffs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classEigen_1_1QuaternionRef_a32775ef17d906112484443a31307052f}{}\label{classEigen_1_1QuaternionRef_a32775ef17d906112484443a31307052f}
+
+
+Get quaternion coefficients. 
+
+This function is used internally by Eigen to get the coefficients for the Quaternion functionalities provided by Eigen\+::\+Quaternion\+Base. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/dean/ros/workspaces/ow\+\_\+test\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/\+Eigen/\hyperlink{Eigen_2quaternion__ref_8h}{quaternion\+\_\+ref.\+h}\end{DoxyCompactItemize}

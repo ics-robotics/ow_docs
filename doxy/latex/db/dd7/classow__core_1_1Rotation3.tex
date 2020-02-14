@@ -1,0 +1,83 @@
+\hypertarget{classow__core_1_1Rotation3}{}\section{ow\+\_\+core\+:\+:Rotation3$<$ \+\_\+\+Scalar $>$ Class Template Reference}
+\label{classow__core_1_1Rotation3}\index{ow\+\_\+core\+::\+Rotation3$<$ \+\_\+\+Scalar $>$@{ow\+\_\+core\+::\+Rotation3$<$ \+\_\+\+Scalar $>$}}
+
+
+The \hyperlink{classow__core_1_1Rotation3}{Rotation3} class.  
+
+
+
+
+{\ttfamily \#include $<$rotation3.\+h$>$}
+
+Inheritance diagram for ow\+\_\+core\+:\+:Rotation3$<$ \+\_\+\+Scalar $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{db/dd7/classow__core_1_1Rotation3}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \+\_\+\+Scalar {\bfseries Scalar}\hypertarget{classow__core_1_1Rotation3_a470ab3889d669c7c775de59719a05cd5}{}\label{classow__core_1_1Rotation3_a470ab3889d669c7c775de59719a05cd5}
+
+\item 
+typedef Eigen\+::\+Matrix$<$ \+\_\+\+Scalar, 3, 3 $>$ {\bfseries Derived}\hypertarget{classow__core_1_1Rotation3_aaa3e83f38709cf7ea047d0a21423b3ef}{}\label{classow__core_1_1Rotation3_aaa3e83f38709cf7ea047d0a21423b3ef}
+
+\item 
+typedef \hyperlink{classow__core_1_1Rotation3Ref}{Rotation3\+Ref}$<$ Derived $>$ {\bfseries Base}\hypertarget{classow__core_1_1Rotation3_ae25fa89b75676d23b296fcae485f7b71}{}\label{classow__core_1_1Rotation3_ae25fa89b75676d23b296fcae485f7b71}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__core_1_1Rotation3_abd12cb236cf8ff6e5337228633d4815b}{Rotation3} ()\hypertarget{classow__core_1_1Rotation3_abd12cb236cf8ff6e5337228633d4815b}{}\label{classow__core_1_1Rotation3_abd12cb236cf8ff6e5337228633d4815b}
+
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Other\+Derived $>$ }\\\hyperlink{classow__core_1_1Rotation3_af8f7c2fd09be7d4e7be68c6786114fab}{Rotation3} (const Eigen\+::\+Eigen\+Base$<$ Other\+Derived $>$ \&other)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Other\+Derived $>$ }\\\hyperlink{classow__core_1_1Rotation3_a34cd49f675144ebc5c6cd50adbd18319}{Rotation3} (const Eigen\+::\+Rotation\+Base$<$ Other\+Derived, 3 $>$ \&other)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Derived {\bfseries data\+\_\+}\hypertarget{classow__core_1_1Rotation3_a815b7076eb7e0ed4f927cc1668393b7b}{}\label{classow__core_1_1Rotation3_a815b7076eb7e0ed4f927cc1668393b7b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename \+\_\+\+Scalar$>$\\*
+class ow\+\_\+core\+::\+Rotation3$<$ \+\_\+\+Scalar $>$}
+
+The \hyperlink{classow__core_1_1Rotation3}{Rotation3} class. 
+
+The \hyperlink{classow__core_1_1Rotation3}{Rotation3} is of type Eigen\+::\+Matrix3 and is represented by the math symbol $\mathbf{R}$. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{ow\+\_\+core\+::\+Rotation3@{ow\+\_\+core\+::\+Rotation3}!Rotation3@{Rotation3}}
+\index{Rotation3@{Rotation3}!ow\+\_\+core\+::\+Rotation3@{ow\+\_\+core\+::\+Rotation3}}
+\subsubsection[{\texorpdfstring{Rotation3(const Eigen\+::\+Eigen\+Base$<$ Other\+Derived $>$ \&other)}{Rotation3(const Eigen::EigenBase< OtherDerived > &other)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar $>$ template$<$typename Other\+Derived $>$ {\bf ow\+\_\+core\+::\+Rotation3}$<$ \+\_\+\+Scalar $>$\+::{\bf Rotation3} (
+\begin{DoxyParamCaption}
+\item[{const Eigen\+::\+Eigen\+Base$<$ Other\+Derived $>$ \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classow__core_1_1Rotation3_af8f7c2fd09be7d4e7be68c6786114fab}{}\label{classow__core_1_1Rotation3_af8f7c2fd09be7d4e7be68c6786114fab}
+
+
+Copy constructor. 
+
+This copy constructor not only works with Eigen matrices but also with their expressions. \index{ow\+\_\+core\+::\+Rotation3@{ow\+\_\+core\+::\+Rotation3}!Rotation3@{Rotation3}}
+\index{Rotation3@{Rotation3}!ow\+\_\+core\+::\+Rotation3@{ow\+\_\+core\+::\+Rotation3}}
+\subsubsection[{\texorpdfstring{Rotation3(const Eigen\+::\+Rotation\+Base$<$ Other\+Derived, 3 $>$ \&other)}{Rotation3(const Eigen::RotationBase< OtherDerived, 3 > &other)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar $>$ template$<$typename Other\+Derived $>$ {\bf ow\+\_\+core\+::\+Rotation3}$<$ \+\_\+\+Scalar $>$\+::{\bf Rotation3} (
+\begin{DoxyParamCaption}
+\item[{const Eigen\+::\+Rotation\+Base$<$ Other\+Derived, 3 $>$ \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classow__core_1_1Rotation3_a34cd49f675144ebc5c6cd50adbd18319}{}\label{classow__core_1_1Rotation3_a34cd49f675144ebc5c6cd50adbd18319}
+
+
+Copy constructor. 
+
+This copy constructor works with Eigen Rotation representations. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/dean/ros/workspaces/ow\+\_\+test\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/\hyperlink{rotation3_8h}{rotation3.\+h}\end{DoxyCompactItemize}

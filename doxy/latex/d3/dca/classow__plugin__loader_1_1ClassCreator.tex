@@ -1,0 +1,99 @@
+\hypertarget{classow__plugin__loader_1_1ClassCreator}{}\section{ow\+\_\+plugin\+\_\+loader\+:\+:Class\+Creator Class Reference}
+\label{classow__plugin__loader_1_1ClassCreator}\index{ow\+\_\+plugin\+\_\+loader\+::\+Class\+Creator@{ow\+\_\+plugin\+\_\+loader\+::\+Class\+Creator}}
+
+
+The \hyperlink{classow__plugin__loader_1_1ClassCreator}{Class\+Creator} class.  
+
+
+
+
+{\ttfamily \#include $<$class\+\_\+creator.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classow__core_1_1IGenericClass}{ow\+\_\+core\+::\+I\+Generic\+Class} {\bfseries I\+Generic\+Class}\hypertarget{classow__plugin__loader_1_1ClassCreator_ac2324a34c491c3e3edf855ff06453531}{}\label{classow__plugin__loader_1_1ClassCreator_ac2324a34c491c3e3edf855ff06453531}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__plugin__loader_1_1ClassCreator_aa18171c6438da1053868549a99d798fd}{Class\+Creator} (const std\+::string \&lib\+File\+Path, bool $\ast$ok=0)
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+virtual \hyperlink{classow__plugin__loader_1_1ClassCreator_a0020c21b86a1acaf0824a07139e6ef82}{$\sim$\+Class\+Creator} ()\hypertarget{classow__plugin__loader_1_1ClassCreator_a0020c21b86a1acaf0824a07139e6ef82}{}\label{classow__plugin__loader_1_1ClassCreator_a0020c21b86a1acaf0824a07139e6ef82}
+
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1IGenericClass}{I\+Generic\+Class} $\ast$ \hyperlink{classow__plugin__loader_1_1ClassCreator_a69208f3b46de111a3a3820a8c2bb726a}{generic\+Class\+Ptr} ()
+\begin{DoxyCompactList}\small\item\em Generic pointer to the created class. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class I\+Class $>$ }\\I\+Class $\ast$ \hyperlink{classow__plugin__loader_1_1ClassCreator_a135ab5f75eb0d1538d02eee8c3f1278e}{class\+Ptr} ()
+\begin{DoxyCompactList}\small\item\em Interface class pointer to the created class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__plugin__loader_1_1ClassLoader}{Class\+Loader} \hyperlink{classow__plugin__loader_1_1ClassCreator_aded4b5806eac1add44b05a92f60d3596}{loader\+\_\+}\hypertarget{classow__plugin__loader_1_1ClassCreator_aded4b5806eac1add44b05a92f60d3596}{}\label{classow__plugin__loader_1_1ClassCreator_aded4b5806eac1add44b05a92f60d3596}
+
+\begin{DoxyCompactList}\small\item\em class loader \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1IGenericClass}{I\+Generic\+Class} $\ast$ \hyperlink{classow__plugin__loader_1_1ClassCreator_a4bf4cda4e02e535f9d7e675a31241187}{c\+\_\+ptr\+\_\+}\hypertarget{classow__plugin__loader_1_1ClassCreator_a4bf4cda4e02e535f9d7e675a31241187}{}\label{classow__plugin__loader_1_1ClassCreator_a4bf4cda4e02e535f9d7e675a31241187}
+
+\begin{DoxyCompactList}\small\item\em the pointer to the created class \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classow__plugin__loader_1_1ClassCreator}{Class\+Creator} class. 
+
+This class can load shared libs at runtime and can create classes from the loaded lib. In contrast to the class loader, this class creates only one instance of the loaded class and manages its pointer. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{ow\+\_\+plugin\+\_\+loader\+::\+Class\+Creator@{ow\+\_\+plugin\+\_\+loader\+::\+Class\+Creator}!Class\+Creator@{Class\+Creator}}
+\index{Class\+Creator@{Class\+Creator}!ow\+\_\+plugin\+\_\+loader\+::\+Class\+Creator@{ow\+\_\+plugin\+\_\+loader\+::\+Class\+Creator}}
+\subsubsection[{\texorpdfstring{Class\+Creator(const std\+::string \&lib\+File\+Path, bool $\ast$ok=0)}{ClassCreator(const std::string &libFilePath, bool *ok=0)}}]{\setlength{\rightskip}{0pt plus 5cm}ow\+\_\+plugin\+\_\+loader\+::\+Class\+Creator\+::\+Class\+Creator (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{lib\+File\+Path, }
+\item[{bool $\ast$}]{ok = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\hypertarget{classow__plugin__loader_1_1ClassCreator_aa18171c6438da1053868549a99d798fd}{}\label{classow__plugin__loader_1_1ClassCreator_aa18171c6438da1053868549a99d798fd}
+
+
+Default constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lib\+File\+Path} & the file path to the .so shared library to use.\\
+\hline
+{\em ok} & optional flag that is set to true on success or set to false on error. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{ow\+\_\+plugin\+\_\+loader\+::\+Class\+Creator@{ow\+\_\+plugin\+\_\+loader\+::\+Class\+Creator}!class\+Ptr@{class\+Ptr}}
+\index{class\+Ptr@{class\+Ptr}!ow\+\_\+plugin\+\_\+loader\+::\+Class\+Creator@{ow\+\_\+plugin\+\_\+loader\+::\+Class\+Creator}}
+\subsubsection[{\texorpdfstring{class\+Ptr()}{classPtr()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class I\+Class $>$ I\+Class$\ast$ ow\+\_\+plugin\+\_\+loader\+::\+Class\+Creator\+::class\+Ptr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classow__plugin__loader_1_1ClassCreator_a135ab5f75eb0d1538d02eee8c3f1278e}{}\label{classow__plugin__loader_1_1ClassCreator_a135ab5f75eb0d1538d02eee8c3f1278e}
+
+
+Interface class pointer to the created class. 
+
+This pointer is 0 on error.
+
+N\+O\+TE\+: the creation and deletion of the created class is managed by this class. You should not delete the class to which this pointer is pointing. \index{ow\+\_\+plugin\+\_\+loader\+::\+Class\+Creator@{ow\+\_\+plugin\+\_\+loader\+::\+Class\+Creator}!generic\+Class\+Ptr@{generic\+Class\+Ptr}}
+\index{generic\+Class\+Ptr@{generic\+Class\+Ptr}!ow\+\_\+plugin\+\_\+loader\+::\+Class\+Creator@{ow\+\_\+plugin\+\_\+loader\+::\+Class\+Creator}}
+\subsubsection[{\texorpdfstring{generic\+Class\+Ptr()}{genericClassPtr()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+Generic\+Class}$\ast$ ow\+\_\+plugin\+\_\+loader\+::\+Class\+Creator\+::generic\+Class\+Ptr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classow__plugin__loader_1_1ClassCreator_a69208f3b46de111a3a3820a8c2bb726a}{}\label{classow__plugin__loader_1_1ClassCreator_a69208f3b46de111a3a3820a8c2bb726a}
+
+
+Generic pointer to the created class. 
+
+This pointer is 0 on error.
+
+N\+O\+TE\+: the creation and deletion of the created class is managed by this class. You should not delete the class to which this pointer is pointing. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/dean/ros/workspaces/ow\+\_\+test\+\_\+ws/src/ow\+\_\+plugin\+\_\+loader/include/ow\+\_\+plugin\+\_\+loader/\hyperlink{class__creator_8h}{class\+\_\+creator.\+h}\end{DoxyCompactItemize}

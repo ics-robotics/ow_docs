@@ -1,0 +1,116 @@
+\hypertarget{classow__plugin__loader_1_1ClassLoader}{}\section{ow\+\_\+plugin\+\_\+loader\+:\+:Class\+Loader Class Reference}
+\label{classow__plugin__loader_1_1ClassLoader}\index{ow\+\_\+plugin\+\_\+loader\+::\+Class\+Loader@{ow\+\_\+plugin\+\_\+loader\+::\+Class\+Loader}}
+
+
+The \hyperlink{classow__plugin__loader_1_1ClassLoader}{Class\+Loader} class.  
+
+
+
+
+{\ttfamily \#include $<$class\+\_\+loader.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classow__core_1_1IGenericClass}{ow\+\_\+core\+::\+I\+Generic\+Class} {\bfseries I\+Generic\+Class}\hypertarget{classow__plugin__loader_1_1ClassLoader_aeb268b387f1810a002e0927e2f72a9d5}{}\label{classow__plugin__loader_1_1ClassLoader_aeb268b387f1810a002e0927e2f72a9d5}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__plugin__loader_1_1ClassLoader_a6578b700790fbf7659e81aceabee7630}{Class\+Loader} (const std\+::string \&lib\+File\+Path=\char`\"{}\char`\"{})\hypertarget{classow__plugin__loader_1_1ClassLoader_a6578b700790fbf7659e81aceabee7630}{}\label{classow__plugin__loader_1_1ClassLoader_a6578b700790fbf7659e81aceabee7630}
+
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+virtual \hyperlink{classow__plugin__loader_1_1ClassLoader_a8c85ba871c8a9caf9734eaf5111bee63}{$\sim$\+Class\+Loader} ()\hypertarget{classow__plugin__loader_1_1ClassLoader_a8c85ba871c8a9caf9734eaf5111bee63}{}\label{classow__plugin__loader_1_1ClassLoader_a8c85ba871c8a9caf9734eaf5111bee63}
+
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\item 
+bool \hyperlink{classow__plugin__loader_1_1ClassLoader_aa748690ab43967584daff8db4269fa49}{open} (const std\+::string \&lib\+File\+Path=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Open and load the shared lib which contains the desired class to create. \end{DoxyCompactList}\item 
+bool \hyperlink{classow__plugin__loader_1_1ClassLoader_ae1b7d5da12b27e6ffbf34b9b8242e4f1}{close} ()
+\begin{DoxyCompactList}\small\item\em Unload and close the shared lib. \end{DoxyCompactList}\item 
+bool {\bfseries is\+Opened} () const \hypertarget{classow__plugin__loader_1_1ClassLoader_a6fc48740bceb814da7af5ccdfe5ec6bb}{}\label{classow__plugin__loader_1_1ClassLoader_a6fc48740bceb814da7af5ccdfe5ec6bb}
+
+\item 
+bool {\bfseries is\+Closed} () const \hypertarget{classow__plugin__loader_1_1ClassLoader_a32af91737fb08d8d40007ed9e8ad7acb}{}\label{classow__plugin__loader_1_1ClassLoader_a32af91737fb08d8d40007ed9e8ad7acb}
+
+\item 
+\hyperlink{classow__core_1_1IGenericClass}{I\+Generic\+Class} $\ast$ \hyperlink{classow__plugin__loader_1_1ClassLoader_a6091dfbec7f40133d6308c8944f593e4}{create\+Class\+Generic} ()\hypertarget{classow__plugin__loader_1_1ClassLoader_a6091dfbec7f40133d6308c8944f593e4}{}\label{classow__plugin__loader_1_1ClassLoader_a6091dfbec7f40133d6308c8944f593e4}
+
+\begin{DoxyCompactList}\small\item\em Create a new class of the loaded library and return a generic pointer. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class I\+Class $>$ }\\I\+Class $\ast$ \hyperlink{classow__plugin__loader_1_1ClassLoader_abe9d08376bad4a1530bc0e7a03334387}{create\+Class} ()
+\begin{DoxyCompactList}\small\item\em Create a new class of the loaded library with the specified type. \end{DoxyCompactList}\item 
+void \hyperlink{classow__plugin__loader_1_1ClassLoader_a3a5641de8591671332143c94e1700f3f}{destroy\+Class} (\hyperlink{classow__core_1_1IGenericClass}{I\+Generic\+Class} $\ast$ptr)
+\begin{DoxyCompactList}\small\item\em Destroy a created class using the loaded lib to avoid memory leaks. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \hyperlink{classow__plugin__loader_1_1ClassLoader_a85a929ab2f12298ff72b791ce816f899}{handle\+\_\+}\hypertarget{classow__plugin__loader_1_1ClassLoader_a85a929ab2f12298ff72b791ce816f899}{}\label{classow__plugin__loader_1_1ClassLoader_a85a929ab2f12298ff72b791ce816f899}
+
+\begin{DoxyCompactList}\small\item\em the handle for shared library \end{DoxyCompactList}\item 
+bool \hyperlink{classow__plugin__loader_1_1ClassLoader_aa9db3390561bd553d028577cbbcc29e3}{opened\+\_\+}\hypertarget{classow__plugin__loader_1_1ClassLoader_aa9db3390561bd553d028577cbbcc29e3}{}\label{classow__plugin__loader_1_1ClassLoader_aa9db3390561bd553d028577cbbcc29e3}
+
+\begin{DoxyCompactList}\small\item\em opened/closed flag \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classow__plugin__loader_1_1ClassLoader_afcb3228923170420f9faf9ef44addd56}{lib\+File\+Path\+\_\+}\hypertarget{classow__plugin__loader_1_1ClassLoader_afcb3228923170420f9faf9ef44addd56}{}\label{classow__plugin__loader_1_1ClassLoader_afcb3228923170420f9faf9ef44addd56}
+
+\begin{DoxyCompactList}\small\item\em file path to .so library \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classow__plugin__loader_1_1ClassLoader}{Class\+Loader} class. 
+
+This class can load shared libraries at runtime and can create classes from the loaded lib. 
+
+\subsection{Member Function Documentation}
+\index{ow\+\_\+plugin\+\_\+loader\+::\+Class\+Loader@{ow\+\_\+plugin\+\_\+loader\+::\+Class\+Loader}!close@{close}}
+\index{close@{close}!ow\+\_\+plugin\+\_\+loader\+::\+Class\+Loader@{ow\+\_\+plugin\+\_\+loader\+::\+Class\+Loader}}
+\subsubsection[{\texorpdfstring{close()}{close()}}]{\setlength{\rightskip}{0pt plus 5cm}bool ow\+\_\+plugin\+\_\+loader\+::\+Class\+Loader\+::close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classow__plugin__loader_1_1ClassLoader_ae1b7d5da12b27e6ffbf34b9b8242e4f1}{}\label{classow__plugin__loader_1_1ClassLoader_ae1b7d5da12b27e6ffbf34b9b8242e4f1}
+
+
+Unload and close the shared lib. 
+
+N\+O\+TE\+: This invalidates all the classes which might have been created. \index{ow\+\_\+plugin\+\_\+loader\+::\+Class\+Loader@{ow\+\_\+plugin\+\_\+loader\+::\+Class\+Loader}!create\+Class@{create\+Class}}
+\index{create\+Class@{create\+Class}!ow\+\_\+plugin\+\_\+loader\+::\+Class\+Loader@{ow\+\_\+plugin\+\_\+loader\+::\+Class\+Loader}}
+\subsubsection[{\texorpdfstring{create\+Class()}{createClass()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class I\+Class $>$ I\+Class$\ast$ ow\+\_\+plugin\+\_\+loader\+::\+Class\+Loader\+::create\+Class (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classow__plugin__loader_1_1ClassLoader_abe9d08376bad4a1530bc0e7a03334387}{}\label{classow__plugin__loader_1_1ClassLoader_abe9d08376bad4a1530bc0e7a03334387}
+
+
+Create a new class of the loaded library with the specified type. 
+
+N\+O\+TE\+: You need to be sure that you use the right interface class type I\+Class.
+
+N\+O\+TE\+: The class is allocated on the heap and the caller of this function needs to free the class when needed.
+
+The return of a nullptr indicates that something went wrong. \index{ow\+\_\+plugin\+\_\+loader\+::\+Class\+Loader@{ow\+\_\+plugin\+\_\+loader\+::\+Class\+Loader}!destroy\+Class@{destroy\+Class}}
+\index{destroy\+Class@{destroy\+Class}!ow\+\_\+plugin\+\_\+loader\+::\+Class\+Loader@{ow\+\_\+plugin\+\_\+loader\+::\+Class\+Loader}}
+\subsubsection[{\texorpdfstring{destroy\+Class(\+I\+Generic\+Class $\ast$ptr)}{destroyClass(IGenericClass *ptr)}}]{\setlength{\rightskip}{0pt plus 5cm}void ow\+\_\+plugin\+\_\+loader\+::\+Class\+Loader\+::destroy\+Class (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Generic\+Class} $\ast$}]{ptr}
+\end{DoxyParamCaption}
+)}\hypertarget{classow__plugin__loader_1_1ClassLoader_a3a5641de8591671332143c94e1700f3f}{}\label{classow__plugin__loader_1_1ClassLoader_a3a5641de8591671332143c94e1700f3f}
+
+
+Destroy a created class using the loaded lib to avoid memory leaks. 
+
+This is the counter part for the create\+X\+XX functions. Don\textquotesingle{}t use delete on the pointer that you get from the create\+X\+XX fuctions. Use this function instead. \index{ow\+\_\+plugin\+\_\+loader\+::\+Class\+Loader@{ow\+\_\+plugin\+\_\+loader\+::\+Class\+Loader}!open@{open}}
+\index{open@{open}!ow\+\_\+plugin\+\_\+loader\+::\+Class\+Loader@{ow\+\_\+plugin\+\_\+loader\+::\+Class\+Loader}}
+\subsubsection[{\texorpdfstring{open(const std\+::string \&lib\+File\+Path="""")}{open(const std::string &libFilePath="")}}]{\setlength{\rightskip}{0pt plus 5cm}bool ow\+\_\+plugin\+\_\+loader\+::\+Class\+Loader\+::open (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{lib\+File\+Path = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{classow__plugin__loader_1_1ClassLoader_aa748690ab43967584daff8db4269fa49}{}\label{classow__plugin__loader_1_1ClassLoader_aa748690ab43967584daff8db4269fa49}
+
+
+Open and load the shared lib which contains the desired class to create. 
+
+Uses the previously defined file path if the arg is empty. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/dean/ros/workspaces/ow\+\_\+test\+\_\+ws/src/ow\+\_\+plugin\+\_\+loader/include/ow\+\_\+plugin\+\_\+loader/\hyperlink{class__loader_8h}{class\+\_\+loader.\+h}\end{DoxyCompactItemize}

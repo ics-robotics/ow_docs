@@ -1,0 +1,75 @@
+\hypertarget{classow__core_1_1IGenericClass}{}\section{ow\+\_\+core\+:\+:I\+Generic\+Class Class Reference}
+\label{classow__core_1_1IGenericClass}\index{ow\+\_\+core\+::\+I\+Generic\+Class@{ow\+\_\+core\+::\+I\+Generic\+Class}}
+
+
+The \hyperlink{classow__core_1_1IGenericClass}{I\+Generic\+Class} class.  
+
+
+
+
+{\ttfamily \#include $<$i\+\_\+generic\+\_\+class.\+h$>$}
+
+Inheritance diagram for ow\+\_\+core\+:\+:I\+Generic\+Class\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{da/d72/classow__core_1_1IGenericClass}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classow__core_1_1IGenericClass_aa0bef13a4de1a0fed78a8e3d3d8a417e}{$\sim$\+I\+Generic\+Class} ()\hypertarget{classow__core_1_1IGenericClass_aa0bef13a4de1a0fed78a8e3d3d8a417e}{}\label{classow__core_1_1IGenericClass_aa0bef13a4de1a0fed78a8e3d3d8a417e}
+
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
+virtual std\+::string \hyperlink{classow__core_1_1IGenericClass_ad6ca32fd7189a4bd71c01c10e3677ae4}{class\+Type} () const 
+\begin{DoxyCompactList}\small\item\em Get the class type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static const std\+::string \& \hyperlink{classow__core_1_1IGenericClass_acf2c60d6dde7803ceb855a3f8a3e24b3}{Class\+Type} ()
+\begin{DoxyCompactList}\small\item\em The class type of this class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classow__core_1_1IGenericClass}{I\+Generic\+Class} class. 
+
+The interface class for dynamically created classes from a runtime loaded shared library.
+
+N\+O\+TE\+: If you want to create a class dynamically from a runtime loaded shared library, then that class needs to have a virtual destructor.
+
+All Open\+Walker plugins derive from this class to be loadable at runtime. 
+
+\subsection{Member Function Documentation}
+\index{ow\+\_\+core\+::\+I\+Generic\+Class@{ow\+\_\+core\+::\+I\+Generic\+Class}!Class\+Type@{Class\+Type}}
+\index{Class\+Type@{Class\+Type}!ow\+\_\+core\+::\+I\+Generic\+Class@{ow\+\_\+core\+::\+I\+Generic\+Class}}
+\subsubsection[{\texorpdfstring{Class\+Type()}{ClassType()}}]{\setlength{\rightskip}{0pt plus 5cm}static const std\+::string\& ow\+\_\+core\+::\+I\+Generic\+Class\+::\+Class\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classow__core_1_1IGenericClass_acf2c60d6dde7803ceb855a3f8a3e24b3}{}\label{classow__core_1_1IGenericClass_acf2c60d6dde7803ceb855a3f8a3e24b3}
+
+
+The class type of this class. 
+
+Since demangling and mangling are compiler specific we use this function to store the type of a class. This function should be overloaded in all classes that derive from this class. \index{ow\+\_\+core\+::\+I\+Generic\+Class@{ow\+\_\+core\+::\+I\+Generic\+Class}!class\+Type@{class\+Type}}
+\index{class\+Type@{class\+Type}!ow\+\_\+core\+::\+I\+Generic\+Class@{ow\+\_\+core\+::\+I\+Generic\+Class}}
+\subsubsection[{\texorpdfstring{class\+Type() const }{classType() const }}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\+::string ow\+\_\+core\+::\+I\+Generic\+Class\+::class\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classow__core_1_1IGenericClass_ad6ca32fd7189a4bd71c01c10e3677ae4}{}\label{classow__core_1_1IGenericClass_ad6ca32fd7189a4bd71c01c10e3677ae4}
+
+
+Get the class type. 
+
+Note\+: This identifier can be used to determine the class that this interface abstracts. Then the pointer of this class can be up casted to the correct type.
+
+Note\+: This function should be overwritten by all classes that derive from this class. 
+
+Reimplemented in \hyperlink{classow__core_1_1IPlugin_aff710e9ec9633592c7f013b9c85a4722}{ow\+\_\+core\+::\+I\+Plugin}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/dean/ros/workspaces/ow\+\_\+test\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/\+Plugins/\hyperlink{i__generic__class_8h}{i\+\_\+generic\+\_\+class.\+h}\end{DoxyCompactItemize}

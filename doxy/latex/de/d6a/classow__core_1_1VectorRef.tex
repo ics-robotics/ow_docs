@@ -1,0 +1,78 @@
+\hypertarget{classow__core_1_1VectorRef}{}\section{ow\+\_\+core\+:\+:Vector\+Ref$<$ \+\_\+\+Derived, \+\_\+\+Rows $>$ Class Template Reference}
+\label{classow__core_1_1VectorRef}\index{ow\+\_\+core\+::\+Vector\+Ref$<$ \+\_\+\+Derived, \+\_\+\+Rows $>$@{ow\+\_\+core\+::\+Vector\+Ref$<$ \+\_\+\+Derived, \+\_\+\+Rows $>$}}
+
+
+The \hyperlink{classow__core_1_1VectorRef}{Vector\+Ref} class.  
+
+
+
+
+{\ttfamily \#include $<$vector\+\_\+ref.\+h$>$}
+
+Inheritance diagram for ow\+\_\+core\+:\+:Vector\+Ref$<$ \+\_\+\+Derived, \+\_\+\+Rows $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{de/d6a/classow__core_1_1VectorRef}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ {\bfseries Rows} = \+\_\+\+Rows
+ \}\hypertarget{classow__core_1_1VectorRef_a1fece9813818a7e76b4d602544b9459d}{}\label{classow__core_1_1VectorRef_a1fece9813818a7e76b4d602544b9459d}
+
+\item 
+typedef \+\_\+\+Derived {\bfseries Derived}\hypertarget{classow__core_1_1VectorRef_a7536251477ddb12a8c69099b2bd927f2}{}\label{classow__core_1_1VectorRef_a7536251477ddb12a8c69099b2bd927f2}
+
+\item 
+typedef Eigen\+::\+Block$<$ Derived, Rows, 1 $>$ {\bfseries Base}\hypertarget{classow__core_1_1VectorRef_a279d56c9662da5a4fbc798e5d554c273}{}\label{classow__core_1_1VectorRef_a279d56c9662da5a4fbc798e5d554c273}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__core_1_1VectorRef_add9b005be63c7346b39ddf869e591b4b}{Vector\+Ref} (Derived \&ref, int start\+Row=0, int start\+Col=0)
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classow__core_1_1VectorRef_a8801753aee0b11331a4613f5d3391afc}{to\+String} () const \hypertarget{classow__core_1_1VectorRef_a8801753aee0b11331a4613f5d3391afc}{}\label{classow__core_1_1VectorRef_a8801753aee0b11331a4613f5d3391afc}
+
+\begin{DoxyCompactList}\small\item\em Conversion to std\+::string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename \+\_\+\+Derived, int \+\_\+\+Rows$>$\\*
+class ow\+\_\+core\+::\+Vector\+Ref$<$ \+\_\+\+Derived, \+\_\+\+Rows $>$}
+
+The \hyperlink{classow__core_1_1VectorRef}{Vector\+Ref} class. 
+
+References the data of another Eigen type class via Eigen\+:Block.
+
+We need this special type to get the behavior of Eigen\+::\+Matrix when defining new references. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{ow\+\_\+core\+::\+Vector\+Ref@{ow\+\_\+core\+::\+Vector\+Ref}!Vector\+Ref@{Vector\+Ref}}
+\index{Vector\+Ref@{Vector\+Ref}!ow\+\_\+core\+::\+Vector\+Ref@{ow\+\_\+core\+::\+Vector\+Ref}}
+\subsubsection[{\texorpdfstring{Vector\+Ref(\+Derived \&ref, int start\+Row=0, int start\+Col=0)}{VectorRef(Derived &ref, int startRow=0, int startCol=0)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Derived, int \+\_\+\+Rows$>$ {\bf ow\+\_\+core\+::\+Vector\+Ref}$<$ \+\_\+\+Derived, \+\_\+\+Rows $>$\+::{\bf Vector\+Ref} (
+\begin{DoxyParamCaption}
+\item[{Derived \&}]{ref, }
+\item[{int}]{start\+Row = {\ttfamily 0}, }
+\item[{int}]{start\+Col = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\hypertarget{classow__core_1_1VectorRef_add9b005be63c7346b39ddf869e591b4b}{}\label{classow__core_1_1VectorRef_add9b005be63c7346b39ddf869e591b4b}
+
+
+Default Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ref} & the reference to storage Eigen object to access the elements of the quaternion via Eigen\+::\+Block.\\
+\hline
+{\em start\+Row} & the start index of the row for Eigen\+::\+Block.\\
+\hline
+{\em start\+Col} & the start index of the column for Eigen\+::\+Block. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/dean/ros/workspaces/ow\+\_\+test\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/\hyperlink{vector__ref_8h}{vector\+\_\+ref.\+h}\end{DoxyCompactItemize}

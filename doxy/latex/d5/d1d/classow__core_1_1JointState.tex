@@ -1,0 +1,106 @@
+\hypertarget{classow__core_1_1JointState}{}\section{ow\+\_\+core\+:\+:Joint\+State$<$ \+\_\+\+Scalar, \+\_\+\+Rows $>$ Class Template Reference}
+\label{classow__core_1_1JointState}\index{ow\+\_\+core\+::\+Joint\+State$<$ \+\_\+\+Scalar, \+\_\+\+Rows $>$@{ow\+\_\+core\+::\+Joint\+State$<$ \+\_\+\+Scalar, \+\_\+\+Rows $>$}}
+
+
+The \hyperlink{classow__core_1_1JointState}{Joint\+State} class.  
+
+
+
+
+{\ttfamily \#include $<$joint\+\_\+state.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ {\bfseries Rows} = \+\_\+\+Rows
+ \}\hypertarget{classow__core_1_1JointState_a72c9b5d1e8739f05cba3f4d877231f9f}{}\label{classow__core_1_1JointState_a72c9b5d1e8739f05cba3f4d877231f9f}
+
+\item 
+typedef \+\_\+\+Scalar {\bfseries Scalar}\hypertarget{classow__core_1_1JointState_aa4aedc0d11f33346be0481efeea485c9}{}\label{classow__core_1_1JointState_aa4aedc0d11f33346be0481efeea485c9}
+
+\item 
+typedef \hyperlink{classow__core_1_1VectorDof}{Vector\+Dof}$<$ Scalar, Rows $>$ {\bfseries J\+Vec}\hypertarget{classow__core_1_1JointState_a55aad096a0742060edcc4b13fda49215}{}\label{classow__core_1_1JointState_a55aad096a0742060edcc4b13fda49215}
+
+\item 
+typedef \hyperlink{classow__core_1_1JointPosition}{Joint\+Position}$<$ Scalar, Rows $>$ {\bfseries J\+Pos}\hypertarget{classow__core_1_1JointState_a9b3100d10fa3f1ae653453c4c661bb87}{}\label{classow__core_1_1JointState_a9b3100d10fa3f1ae653453c4c661bb87}
+
+\item 
+typedef \hyperlink{classow__core_1_1JointVelocity}{Joint\+Velocity}$<$ Scalar, Rows $>$ {\bfseries J\+Vel}\hypertarget{classow__core_1_1JointState_a9de74b73fb283026d2e7d505d1afc9fb}{}\label{classow__core_1_1JointState_a9de74b73fb283026d2e7d505d1afc9fb}
+
+\item 
+typedef \hyperlink{classow__core_1_1JointAcceleration}{Joint\+Acceleration}$<$ Scalar, Rows $>$ {\bfseries J\+Acc}\hypertarget{classow__core_1_1JointState_adecba7e0ecf7fd06d470f3dbde49127e}{}\label{classow__core_1_1JointState_adecba7e0ecf7fd06d470f3dbde49127e}
+
+\item 
+typedef \hyperlink{classow__core_1_1JointEffort}{Joint\+Effort}$<$ Scalar, Rows $>$ {\bfseries J\+Torque}\hypertarget{classow__core_1_1JointState_aee2a7252c178e5aae9742603bcca56f7}{}\label{classow__core_1_1JointState_aee2a7252c178e5aae9742603bcca56f7}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__core_1_1JointState_a76834040169f792ff7a3c54d13fc34b7}{Joint\+State} ()\hypertarget{classow__core_1_1JointState_a76834040169f792ff7a3c54d13fc34b7}{}\label{classow__core_1_1JointState_a76834040169f792ff7a3c54d13fc34b7}
+
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1JointPosition}{J\+Pos} \& {\bfseries q} ()\hypertarget{classow__core_1_1JointState_a185f41d427bc41b4136729c5f3fef0b8}{}\label{classow__core_1_1JointState_a185f41d427bc41b4136729c5f3fef0b8}
+
+\item 
+const \hyperlink{classow__core_1_1JointPosition}{J\+Pos} \& {\bfseries q} () const \hypertarget{classow__core_1_1JointState_ac270c084ab9f0fbafcc97e591faa896e}{}\label{classow__core_1_1JointState_ac270c084ab9f0fbafcc97e591faa896e}
+
+\item 
+\hyperlink{classow__core_1_1JointVelocity}{J\+Vel} \& {\bfseries qP} ()\hypertarget{classow__core_1_1JointState_a8cbbd546d0624376c328cf701d10d333}{}\label{classow__core_1_1JointState_a8cbbd546d0624376c328cf701d10d333}
+
+\item 
+const \hyperlink{classow__core_1_1JointVelocity}{J\+Vel} \& {\bfseries qP} () const \hypertarget{classow__core_1_1JointState_a57cc7ee7e3437d567f262e3c7747bdb1}{}\label{classow__core_1_1JointState_a57cc7ee7e3437d567f262e3c7747bdb1}
+
+\item 
+\hyperlink{classow__core_1_1JointAcceleration}{J\+Acc} \& {\bfseries q\+PP} ()\hypertarget{classow__core_1_1JointState_a6fc2f5adf0d20fb3682f25639b545125}{}\label{classow__core_1_1JointState_a6fc2f5adf0d20fb3682f25639b545125}
+
+\item 
+const \hyperlink{classow__core_1_1JointAcceleration}{J\+Acc} \& {\bfseries q\+PP} () const \hypertarget{classow__core_1_1JointState_a4acf99a2437e4dd9a654fd6cd4774ae7}{}\label{classow__core_1_1JointState_a4acf99a2437e4dd9a654fd6cd4774ae7}
+
+\item 
+\hyperlink{classow__core_1_1JointEffort}{J\+Torque} \& {\bfseries tau} ()\hypertarget{classow__core_1_1JointState_aa90b698b021686874d5243ca6d2e8da0}{}\label{classow__core_1_1JointState_aa90b698b021686874d5243ca6d2e8da0}
+
+\item 
+const \hyperlink{classow__core_1_1JointEffort}{J\+Torque} \& {\bfseries tau} () const \hypertarget{classow__core_1_1JointState_a09dd3ce70cbe13ce1abc59ecbffbfe15}{}\label{classow__core_1_1JointState_a09dd3ce70cbe13ce1abc59ecbffbfe15}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static const \hyperlink{classow__core_1_1JointState}{Joint\+State} \& {\bfseries Zero} ()\hypertarget{classow__core_1_1JointState_a2a27c25f103a202e19cbd00339931ef7}{}\label{classow__core_1_1JointState_a2a27c25f103a202e19cbd00339931ef7}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__core_1_1JointPosition}{J\+Pos} {\bfseries q\+\_\+}\hypertarget{classow__core_1_1JointState_ae235da7bdc35c9fc7658fc17b0284a0d}{}\label{classow__core_1_1JointState_ae235da7bdc35c9fc7658fc17b0284a0d}
+
+\item 
+\hyperlink{classow__core_1_1JointVelocity}{J\+Vel} {\bfseries q\+P\+\_\+}\hypertarget{classow__core_1_1JointState_a1aba4e41fe47b16964cb356a499d235d}{}\label{classow__core_1_1JointState_a1aba4e41fe47b16964cb356a499d235d}
+
+\item 
+\hyperlink{classow__core_1_1JointAcceleration}{J\+Acc} {\bfseries q\+P\+P\+\_\+}\hypertarget{classow__core_1_1JointState_adc858e2b394646ed9ff139b162ca3967}{}\label{classow__core_1_1JointState_adc858e2b394646ed9ff139b162ca3967}
+
+\item 
+\hyperlink{classow__core_1_1JointEffort}{J\+Torque} {\bfseries tau\+\_\+}\hypertarget{classow__core_1_1JointState_a625cab6fc764fd1e2cba18e3b183fdd6}{}\label{classow__core_1_1JointState_a625cab6fc764fd1e2cba18e3b183fdd6}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename \+\_\+\+Scalar, int \+\_\+\+Rows$>$\\*
+class ow\+\_\+core\+::\+Joint\+State$<$ \+\_\+\+Scalar, \+\_\+\+Rows $>$}
+
+The \hyperlink{classow__core_1_1JointState}{Joint\+State} class. 
+
+This class is a container for\+:
+\begin{DoxyItemize}
+\item \hyperlink{classow__core_1_1JointPosition}{Joint\+Position}
+\item \hyperlink{classow__core_1_1JointVelocity}{Joint\+Velocity}
+\item \hyperlink{classow__core_1_1JointAcceleration}{Joint\+Acceleration}
+\item \hyperlink{classow__core_1_1JointEffort}{Joint\+Effort} 
+\end{DoxyItemize}
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/dean/ros/workspaces/ow\+\_\+test\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/\hyperlink{joint__state_8h}{joint\+\_\+state.\+h}\end{DoxyCompactItemize}

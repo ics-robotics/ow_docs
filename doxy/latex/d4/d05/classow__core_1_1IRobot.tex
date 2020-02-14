@@ -1,0 +1,52 @@
+\hypertarget{classow__core_1_1IRobot}{}\section{ow\+\_\+core\+:\+:I\+Robot Class Reference}
+\label{classow__core_1_1IRobot}\index{ow\+\_\+core\+::\+I\+Robot@{ow\+\_\+core\+::\+I\+Robot}}
+
+
+The \hyperlink{classow__core_1_1IRobot}{I\+Robot} class.  
+
+
+
+
+{\ttfamily \#include $<$i\+\_\+robot.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classow__core_1_1IRobot_a22760209db12499291efb200e906ed3c}{$\sim$\+I\+Robot} ()\hypertarget{classow__core_1_1IRobot_a22760209db12499291efb200e906ed3c}{}\label{classow__core_1_1IRobot_a22760209db12499291efb200e906ed3c}
+
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
+virtual \hyperlink{classow__core_1_1IRobot_a9bdff9f15015cda18554c4dddf728928}{connect\+In\+Port} (const I\+Inverse\+Kinematics\+Out\+Ports $\ast$ik)=0
+\begin{DoxyCompactList}\small\item\em Connect to in port. \end{DoxyCompactList}\item 
+virtual const \hyperlink{classow__core_1_1IRobotOutPorts}{I\+Robot\+Out\+Ports} $\ast$ {\bfseries out\+Ports} () const =0\hypertarget{classow__core_1_1IRobot_a50f7cf4bb874717667bd03d3bdac7c80}{}\label{classow__core_1_1IRobot_a50f7cf4bb874717667bd03d3bdac7c80}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classow__core_1_1IRobot}{I\+Robot} class. 
+
+Interface class.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000011}{Todo}]Remove forward declaration of I\+Inverse\+Kinematics\+Out\+Ports. \end{DoxyRefDesc}
+
+
+\subsection{Member Function Documentation}
+\index{ow\+\_\+core\+::\+I\+Robot@{ow\+\_\+core\+::\+I\+Robot}!connect\+In\+Port@{connect\+In\+Port}}
+\index{connect\+In\+Port@{connect\+In\+Port}!ow\+\_\+core\+::\+I\+Robot@{ow\+\_\+core\+::\+I\+Robot}}
+\subsubsection[{\texorpdfstring{connect\+In\+Port(const I\+Inverse\+Kinematics\+Out\+Ports $\ast$ik)=0}{connectInPort(const IInverseKinematicsOutPorts *ik)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual ow\+\_\+core\+::\+I\+Robot\+::connect\+In\+Port (
+\begin{DoxyParamCaption}
+\item[{const I\+Inverse\+Kinematics\+Out\+Ports $\ast$}]{ik}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classow__core_1_1IRobot_a9bdff9f15015cda18554c4dddf728928}{}\label{classow__core_1_1IRobot_a9bdff9f15015cda18554c4dddf728928}
+
+
+Connect to in port. 
+
+Connects this module to the out port of another module.
+
+N\+O\+TE\+: The pointer is constant. This module reads only the out port of the other module. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/dean/ros/workspaces/ow\+\_\+test\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/\+Interfaces/\hyperlink{i__robot_8h}{i\+\_\+robot.\+h}\end{DoxyCompactItemize}

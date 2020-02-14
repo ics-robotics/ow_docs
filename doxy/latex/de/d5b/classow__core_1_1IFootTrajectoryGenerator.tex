@@ -1,0 +1,81 @@
+\hypertarget{classow__core_1_1IFootTrajectoryGenerator}{}\section{ow\+\_\+core\+:\+:I\+Foot\+Trajectory\+Generator Class Reference}
+\label{classow__core_1_1IFootTrajectoryGenerator}\index{ow\+\_\+core\+::\+I\+Foot\+Trajectory\+Generator@{ow\+\_\+core\+::\+I\+Foot\+Trajectory\+Generator}}
+
+
+The \hyperlink{classow__core_1_1IFootTrajectoryGenerator}{I\+Foot\+Trajectory\+Generator} class.  
+
+
+
+
+{\ttfamily \#include $<$i\+\_\+foot\+\_\+trajectory\+\_\+generator.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classow__core_1_1IFootTrajectoryGenerator_a67087027cedeb175cf41c5e7eacc8e87}{$\sim$\+I\+Foot\+Trajectory\+Generator} ()\hypertarget{classow__core_1_1IFootTrajectoryGenerator_a67087027cedeb175cf41c5e7eacc8e87}{}\label{classow__core_1_1IFootTrajectoryGenerator_a67087027cedeb175cf41c5e7eacc8e87}
+
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
+virtual \hyperlink{classow__core_1_1IFootTrajectoryGenerator_ac18698993d68a408ecb0820b1ce0cf4e}{connect\+In\+Port\+Foot\+Step\+Planner} (const I\+Foot\+Step\+Planner\+Out\+Ports $\ast$fsp)=0
+\begin{DoxyCompactList}\small\item\em Connect to in port. \end{DoxyCompactList}\item 
+virtual \hyperlink{classow__core_1_1IFootTrajectoryGenerator_ae592f6abe58e94f8197a4b29d4f52b6d}{connect\+In\+Port\+Forward\+Kinematic} (const I\+Forward\+Kinematics\+Out\+Ports $\ast$fk)=0
+\begin{DoxyCompactList}\small\item\em Connect to in port. \end{DoxyCompactList}\item 
+virtual const \hyperlink{classow__core_1_1IFootTrajectoryGeneratorOutPorts}{I\+Foot\+Trajectory\+Generator\+Out\+Ports} $\ast$ \hyperlink{classow__core_1_1IFootTrajectoryGenerator_add02082c2d05777990753ce28449cf4c}{out\+Ports} () const =0
+\begin{DoxyCompactList}\small\item\em provice out ports. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classow__core_1_1IFootTrajectoryGenerator}{I\+Foot\+Trajectory\+Generator} class. 
+
+Interface class.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000008}{Todo}]Remove forward declarations. \end{DoxyRefDesc}
+
+
+\subsection{Member Function Documentation}
+\index{ow\+\_\+core\+::\+I\+Foot\+Trajectory\+Generator@{ow\+\_\+core\+::\+I\+Foot\+Trajectory\+Generator}!connect\+In\+Port\+Foot\+Step\+Planner@{connect\+In\+Port\+Foot\+Step\+Planner}}
+\index{connect\+In\+Port\+Foot\+Step\+Planner@{connect\+In\+Port\+Foot\+Step\+Planner}!ow\+\_\+core\+::\+I\+Foot\+Trajectory\+Generator@{ow\+\_\+core\+::\+I\+Foot\+Trajectory\+Generator}}
+\subsubsection[{\texorpdfstring{connect\+In\+Port\+Foot\+Step\+Planner(const I\+Foot\+Step\+Planner\+Out\+Ports $\ast$fsp)=0}{connectInPortFootStepPlanner(const IFootStepPlannerOutPorts *fsp)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual ow\+\_\+core\+::\+I\+Foot\+Trajectory\+Generator\+::connect\+In\+Port\+Foot\+Step\+Planner (
+\begin{DoxyParamCaption}
+\item[{const I\+Foot\+Step\+Planner\+Out\+Ports $\ast$}]{fsp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classow__core_1_1IFootTrajectoryGenerator_ac18698993d68a408ecb0820b1ce0cf4e}{}\label{classow__core_1_1IFootTrajectoryGenerator_ac18698993d68a408ecb0820b1ce0cf4e}
+
+
+Connect to in port. 
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000009}{Todo}]give specific pointer to other module ouput or the most general outport pointer?\end{DoxyRefDesc}
+
+
+Connects this module to the out port of another module. \index{ow\+\_\+core\+::\+I\+Foot\+Trajectory\+Generator@{ow\+\_\+core\+::\+I\+Foot\+Trajectory\+Generator}!connect\+In\+Port\+Forward\+Kinematic@{connect\+In\+Port\+Forward\+Kinematic}}
+\index{connect\+In\+Port\+Forward\+Kinematic@{connect\+In\+Port\+Forward\+Kinematic}!ow\+\_\+core\+::\+I\+Foot\+Trajectory\+Generator@{ow\+\_\+core\+::\+I\+Foot\+Trajectory\+Generator}}
+\subsubsection[{\texorpdfstring{connect\+In\+Port\+Forward\+Kinematic(const I\+Forward\+Kinematics\+Out\+Ports $\ast$fk)=0}{connectInPortForwardKinematic(const IForwardKinematicsOutPorts *fk)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual ow\+\_\+core\+::\+I\+Foot\+Trajectory\+Generator\+::connect\+In\+Port\+Forward\+Kinematic (
+\begin{DoxyParamCaption}
+\item[{const I\+Forward\+Kinematics\+Out\+Ports $\ast$}]{fk}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classow__core_1_1IFootTrajectoryGenerator_ae592f6abe58e94f8197a4b29d4f52b6d}{}\label{classow__core_1_1IFootTrajectoryGenerator_ae592f6abe58e94f8197a4b29d4f52b6d}
+
+
+Connect to in port. 
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000010}{Todo}]give specific pointer to other module ouput or the most general outport pointer?\end{DoxyRefDesc}
+
+
+Connects this module to the out port of another module. \index{ow\+\_\+core\+::\+I\+Foot\+Trajectory\+Generator@{ow\+\_\+core\+::\+I\+Foot\+Trajectory\+Generator}!out\+Ports@{out\+Ports}}
+\index{out\+Ports@{out\+Ports}!ow\+\_\+core\+::\+I\+Foot\+Trajectory\+Generator@{ow\+\_\+core\+::\+I\+Foot\+Trajectory\+Generator}}
+\subsubsection[{\texorpdfstring{out\+Ports() const =0}{outPorts() const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf I\+Foot\+Trajectory\+Generator\+Out\+Ports}$\ast$ ow\+\_\+core\+::\+I\+Foot\+Trajectory\+Generator\+::out\+Ports (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classow__core_1_1IFootTrajectoryGenerator_add02082c2d05777990753ce28449cf4c}{}\label{classow__core_1_1IFootTrajectoryGenerator_add02082c2d05777990753ce28449cf4c}
+
+
+provice out ports. 
+
+Connects this module to the in port of another module. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/dean/ros/workspaces/ow\+\_\+test\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/\+Interfaces/\hyperlink{i__foot__trajectory__generator_8h}{i\+\_\+foot\+\_\+trajectory\+\_\+generator.\+h}\end{DoxyCompactItemize}

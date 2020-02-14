@@ -1,0 +1,73 @@
+\hypertarget{classow__core_1_1LinearAcceleration}{}\section{ow\+\_\+core\+:\+:Linear\+Acceleration$<$ \+\_\+\+Scalar $>$ Class Template Reference}
+\label{classow__core_1_1LinearAcceleration}\index{ow\+\_\+core\+::\+Linear\+Acceleration$<$ \+\_\+\+Scalar $>$@{ow\+\_\+core\+::\+Linear\+Acceleration$<$ \+\_\+\+Scalar $>$}}
+
+
+The \hyperlink{classow__core_1_1LinearAcceleration}{Linear\+Acceleration} class.  
+
+
+
+
+{\ttfamily \#include $<$linear\+\_\+acceleration.\+h$>$}
+
+Inheritance diagram for ow\+\_\+core\+:\+:Linear\+Acceleration$<$ \+\_\+\+Scalar $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{d2/d41/classow__core_1_1LinearAcceleration}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \+\_\+\+Scalar {\bfseries Scalar}\hypertarget{classow__core_1_1LinearAcceleration_a11f5e96fae3ce2a9833d73dc64a9854c}{}\label{classow__core_1_1LinearAcceleration_a11f5e96fae3ce2a9833d73dc64a9854c}
+
+\item 
+typedef Eigen\+::\+Matrix$<$ \+\_\+\+Scalar, 3, 1 $>$ {\bfseries Derived}\hypertarget{classow__core_1_1LinearAcceleration_a964ade2d7efcfa7dd3876e779ccd13c5}{}\label{classow__core_1_1LinearAcceleration_a964ade2d7efcfa7dd3876e779ccd13c5}
+
+\item 
+typedef \hyperlink{classow__core_1_1LinearAccelerationRef}{Linear\+Acceleration\+Ref}$<$ Derived $>$ {\bfseries Base}\hypertarget{classow__core_1_1LinearAcceleration_ae577feb121ea5253b6d68b08f2d8af44}{}\label{classow__core_1_1LinearAcceleration_ae577feb121ea5253b6d68b08f2d8af44}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__core_1_1LinearAcceleration_a6761e3ab1a7bd77c15cb0759dd25b1e1}{Linear\+Acceleration} ()\hypertarget{classow__core_1_1LinearAcceleration_a6761e3ab1a7bd77c15cb0759dd25b1e1}{}\label{classow__core_1_1LinearAcceleration_a6761e3ab1a7bd77c15cb0759dd25b1e1}
+
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1LinearAcceleration_ae2ac66af1c81554f31535fd7af7aa2b4}{Linear\+Acceleration} (const Scalar \&x, const Scalar \&y, const Scalar \&z)\hypertarget{classow__core_1_1LinearAcceleration_ae2ac66af1c81554f31535fd7af7aa2b4}{}\label{classow__core_1_1LinearAcceleration_ae2ac66af1c81554f31535fd7af7aa2b4}
+
+\begin{DoxyCompactList}\small\item\em Assignment from Scalar values. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Other\+Derived $>$ }\\\hyperlink{classow__core_1_1LinearAcceleration_a243335c29a665db0eb2870fa7d41f5eb}{Linear\+Acceleration} (const Eigen\+::\+Eigen\+Base$<$ Other\+Derived $>$ \&other)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Derived {\bfseries data\+\_\+}\hypertarget{classow__core_1_1LinearAcceleration_aaf5e7a060e1ed0ac2f3545ba4485fe36}{}\label{classow__core_1_1LinearAcceleration_aaf5e7a060e1ed0ac2f3545ba4485fe36}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename \+\_\+\+Scalar$>$\\*
+class ow\+\_\+core\+::\+Linear\+Acceleration$<$ \+\_\+\+Scalar $>$}
+
+The \hyperlink{classow__core_1_1LinearAcceleration}{Linear\+Acceleration} class. 
+
+The \hyperlink{classow__core_1_1LinearAcceleration}{Linear\+Acceleration} is of type Eigen\+::\+Vector3 and is represented by the math symbol $\ddot{\mathbf{x}}$. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{ow\+\_\+core\+::\+Linear\+Acceleration@{ow\+\_\+core\+::\+Linear\+Acceleration}!Linear\+Acceleration@{Linear\+Acceleration}}
+\index{Linear\+Acceleration@{Linear\+Acceleration}!ow\+\_\+core\+::\+Linear\+Acceleration@{ow\+\_\+core\+::\+Linear\+Acceleration}}
+\subsubsection[{\texorpdfstring{Linear\+Acceleration(const Eigen\+::\+Eigen\+Base$<$ Other\+Derived $>$ \&other)}{LinearAcceleration(const Eigen::EigenBase< OtherDerived > &other)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar$>$ template$<$typename Other\+Derived $>$ {\bf ow\+\_\+core\+::\+Linear\+Acceleration}$<$ \+\_\+\+Scalar $>$\+::{\bf Linear\+Acceleration} (
+\begin{DoxyParamCaption}
+\item[{const Eigen\+::\+Eigen\+Base$<$ Other\+Derived $>$ \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classow__core_1_1LinearAcceleration_a243335c29a665db0eb2870fa7d41f5eb}{}\label{classow__core_1_1LinearAcceleration_a243335c29a665db0eb2870fa7d41f5eb}
+
+
+Copy constructor. 
+
+This copy constructor not only works with Eigen matrices but also with their expressions. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/dean/ros/workspaces/ow\+\_\+test\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/\hyperlink{linear__acceleration_8h}{linear\+\_\+acceleration.\+h}\end{DoxyCompactItemize}

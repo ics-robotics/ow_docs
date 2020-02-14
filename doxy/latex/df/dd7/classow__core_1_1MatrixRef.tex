@@ -1,0 +1,95 @@
+\hypertarget{classow__core_1_1MatrixRef}{}\section{ow\+\_\+core\+:\+:Matrix\+Ref$<$ \+\_\+\+Derived, \+\_\+\+Rows, \+\_\+\+Cols $>$ Class Template Reference}
+\label{classow__core_1_1MatrixRef}\index{ow\+\_\+core\+::\+Matrix\+Ref$<$ \+\_\+\+Derived, \+\_\+\+Rows, \+\_\+\+Cols $>$@{ow\+\_\+core\+::\+Matrix\+Ref$<$ \+\_\+\+Derived, \+\_\+\+Rows, \+\_\+\+Cols $>$}}
+
+
+The \hyperlink{classow__core_1_1MatrixRef}{Matrix\+Ref} class.  
+
+
+
+
+{\ttfamily \#include $<$matrix\+\_\+ref.\+h$>$}
+
+Inheritance diagram for ow\+\_\+core\+:\+:Matrix\+Ref$<$ \+\_\+\+Derived, \+\_\+\+Rows, \+\_\+\+Cols $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{df/dd7/classow__core_1_1MatrixRef}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ {\bfseries Rows} = \+\_\+\+Rows, 
+{\bfseries Cols} = \+\_\+\+Cols
+ \}\hypertarget{classow__core_1_1MatrixRef_acbc53f5a50649a21caafebc91966f6d3}{}\label{classow__core_1_1MatrixRef_acbc53f5a50649a21caafebc91966f6d3}
+
+\item 
+typedef \+\_\+\+Derived {\bfseries Derived}\hypertarget{classow__core_1_1MatrixRef_ad0e55e853d08951e064718a8ac69ac96}{}\label{classow__core_1_1MatrixRef_ad0e55e853d08951e064718a8ac69ac96}
+
+\item 
+typedef Eigen\+::\+Block$<$ Derived, Rows, Cols $>$ {\bfseries Base}\hypertarget{classow__core_1_1MatrixRef_a2b935d9a0c707f1d2f709829413a75a4}{}\label{classow__core_1_1MatrixRef_a2b935d9a0c707f1d2f709829413a75a4}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__core_1_1MatrixRef_aba4840a8e3d79c599a3390d6c64790af}{Matrix\+Ref} (Derived \&ref, int start\+Row=0, int start\+Col=0)
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classow__core_1_1MatrixRef_af123840b0aeea5385866934a44998eef}{to\+String} () const 
+\begin{DoxyCompactList}\small\item\em Conversion to std\+::string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename \+\_\+\+Derived, int \+\_\+\+Rows, int \+\_\+\+Cols$>$\\*
+class ow\+\_\+core\+::\+Matrix\+Ref$<$ \+\_\+\+Derived, \+\_\+\+Rows, \+\_\+\+Cols $>$}
+
+The \hyperlink{classow__core_1_1MatrixRef}{Matrix\+Ref} class. 
+
+References the data of another Eigen type class via Eigen\+:Block.
+
+We need this special type to get the behavior of Eigen\+::\+Matrix when defining new references. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{ow\+\_\+core\+::\+Matrix\+Ref@{ow\+\_\+core\+::\+Matrix\+Ref}!Matrix\+Ref@{Matrix\+Ref}}
+\index{Matrix\+Ref@{Matrix\+Ref}!ow\+\_\+core\+::\+Matrix\+Ref@{ow\+\_\+core\+::\+Matrix\+Ref}}
+\subsubsection[{\texorpdfstring{Matrix\+Ref(\+Derived \&ref, int start\+Row=0, int start\+Col=0)}{MatrixRef(Derived &ref, int startRow=0, int startCol=0)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Derived, int \+\_\+\+Rows, int \+\_\+\+Cols$>$ {\bf ow\+\_\+core\+::\+Matrix\+Ref}$<$ \+\_\+\+Derived, \+\_\+\+Rows, \+\_\+\+Cols $>$\+::{\bf Matrix\+Ref} (
+\begin{DoxyParamCaption}
+\item[{Derived \&}]{ref, }
+\item[{int}]{start\+Row = {\ttfamily 0}, }
+\item[{int}]{start\+Col = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\hypertarget{classow__core_1_1MatrixRef_aba4840a8e3d79c599a3390d6c64790af}{}\label{classow__core_1_1MatrixRef_aba4840a8e3d79c599a3390d6c64790af}
+
+
+Default Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ref} & the reference to storage Eigen object to access the elements of the quaternion via Eigen\+::\+Block.\\
+\hline
+{\em start\+Row} & the start index of the row for Eigen\+::\+Block.\\
+\hline
+{\em start\+Col} & the start index of the column for Eigen\+::\+Block. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{ow\+\_\+core\+::\+Matrix\+Ref@{ow\+\_\+core\+::\+Matrix\+Ref}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!ow\+\_\+core\+::\+Matrix\+Ref@{ow\+\_\+core\+::\+Matrix\+Ref}}
+\subsubsection[{\texorpdfstring{to\+String() const }{toString() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Derived, int \+\_\+\+Rows, int \+\_\+\+Cols$>$ std\+::string {\bf ow\+\_\+core\+::\+Matrix\+Ref}$<$ \+\_\+\+Derived, \+\_\+\+Rows, \+\_\+\+Cols $>$\+::to\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classow__core_1_1MatrixRef_af123840b0aeea5385866934a44998eef}{}\label{classow__core_1_1MatrixRef_af123840b0aeea5385866934a44998eef}
+
+
+Conversion to std\+::string. 
+
+\begin{DoxyReturn}{Returns}
+the string for this type. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/dean/ros/workspaces/ow\+\_\+test\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/\hyperlink{matrix__ref_8h}{matrix\+\_\+ref.\+h}\end{DoxyCompactItemize}

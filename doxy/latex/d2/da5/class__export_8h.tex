@@ -1,0 +1,126 @@
+\hypertarget{class__export_8h}{}\section{/home/dean/ros/workspaces/ow\+\_\+test\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/\+Plugins/class\+\_\+export.h File Reference}
+\label{class__export_8h}\index{/home/dean/ros/workspaces/ow\+\_\+test\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/\+Plugins/class\+\_\+export.\+h@{/home/dean/ros/workspaces/ow\+\_\+test\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/\+Plugins/class\+\_\+export.\+h}}
+
+
+Contains the macros for classes to load them on runtime.  
+
+
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{class__export_8h_afe2f010a85f8f930d43d2eb130e10c48}{O\+W\+\_\+\+P\+L\+U\+G\+I\+N\+\_\+\+C\+L\+A\+S\+S\+\_\+\+C\+R\+E\+A\+TE}(Class)
+\begin{DoxyCompactList}\small\item\em A macro that creates the create factory function for the {\itshape Class}. \end{DoxyCompactList}\item 
+\#define \hyperlink{class__export_8h_aebbebccd30e390c223415cbb40e4a9b9}{O\+W\+\_\+\+P\+L\+U\+G\+I\+N\+\_\+\+C\+L\+A\+S\+S\+\_\+\+D\+E\+S\+T\+R\+OY}(Class)
+\begin{DoxyCompactList}\small\item\em A macro that creates the destroy factory function for the {\itshape Class}. \end{DoxyCompactList}\item 
+\#define \hyperlink{class__export_8h_a28eb969a4300de0d683a5915b93634f1}{O\+W\+\_\+\+P\+L\+U\+G\+I\+N\+\_\+\+C\+L\+A\+SS}(Class)
+\begin{DoxyCompactList}\small\item\em A macro that creates the create and destroy factory functions for the {\itshape Class}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains the macros for classes to load them on runtime. 
+
+\begin{DoxyAuthor}{Author}
+Emmanuel Dean-\/\+Leon 
+
+Florian Bergner 
+
+J. Rogelio Guadarrama-\/\+Olvera 
+
+Simon Armleder 
+
+Gordon Cheng
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+14.\+02.\+2020
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright 2020 Institute for Cognitive Systems (I\+CS), Technical University of Munich (T\+UM)
+\end{DoxyCopyright}
+\subparagraph*{Licence}
+
+Licensed under the Apache License, Version 2.\+0 (the \char`\"{}\+License\char`\"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+\href{http://www.apache.org/licenses/LICENSE-2.0}{\tt http\+://www.\+apache.\+org/licenses/\+L\+I\+C\+E\+N\+S\+E-\/2.\+0}
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}\+A\+S I\+S\char`\"{} B\+A\+S\+IS, W\+I\+T\+H\+O\+UT W\+A\+R\+R\+A\+N\+T\+I\+ES OR C\+O\+N\+D\+I\+T\+I\+O\+NS OF A\+NY K\+I\+ND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+
+\subparagraph*{Acknowledgment}
+
+This project has received funding from the European Union‘s Horizon 2020 research and innovation programme under grant agreement No 732287.
+
+This macros have to be added to the .cpp file of the class that will be loaded at runtime. Make sure that you have only one loadable class with this macros per .so file. 
+
+\subsection{Macro Definition Documentation}
+\index{class\+\_\+export.\+h@{class\+\_\+export.\+h}!O\+W\+\_\+\+P\+L\+U\+G\+I\+N\+\_\+\+C\+L\+A\+SS@{O\+W\+\_\+\+P\+L\+U\+G\+I\+N\+\_\+\+C\+L\+A\+SS}}
+\index{O\+W\+\_\+\+P\+L\+U\+G\+I\+N\+\_\+\+C\+L\+A\+SS@{O\+W\+\_\+\+P\+L\+U\+G\+I\+N\+\_\+\+C\+L\+A\+SS}!class\+\_\+export.\+h@{class\+\_\+export.\+h}}
+\subsubsection[{\texorpdfstring{O\+W\+\_\+\+P\+L\+U\+G\+I\+N\+\_\+\+C\+L\+A\+SS}{OW_PLUGIN_CLASS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define O\+W\+\_\+\+P\+L\+U\+G\+I\+N\+\_\+\+C\+L\+A\+SS(
+\begin{DoxyParamCaption}
+\item[{}]{Class}
+\end{DoxyParamCaption}
+)}\hypertarget{class__export_8h_a28eb969a4300de0d683a5915b93634f1}{}\label{class__export_8h_a28eb969a4300de0d683a5915b93634f1}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\hyperlink{class__export_8h_afe2f010a85f8f930d43d2eb130e10c48}{OW\_PLUGIN\_CLASS\_CREATE}(Class) \hyperlink{class__export_8h_afe2f010a85f8f930d43d2eb130e10c48}{\(\backslash\)}
+\hyperlink{class__export_8h_afe2f010a85f8f930d43d2eb130e10c48}{  OW\_PLUGIN\_CLASS\_CREATE}(Class)
+\end{DoxyCode}
+
+
+A macro that creates the create and destroy factory functions for the {\itshape Class}. 
+
+N\+O\+TE\+: Use this macro only once per .so file! \index{class\+\_\+export.\+h@{class\+\_\+export.\+h}!O\+W\+\_\+\+P\+L\+U\+G\+I\+N\+\_\+\+C\+L\+A\+S\+S\+\_\+\+C\+R\+E\+A\+TE@{O\+W\+\_\+\+P\+L\+U\+G\+I\+N\+\_\+\+C\+L\+A\+S\+S\+\_\+\+C\+R\+E\+A\+TE}}
+\index{O\+W\+\_\+\+P\+L\+U\+G\+I\+N\+\_\+\+C\+L\+A\+S\+S\+\_\+\+C\+R\+E\+A\+TE@{O\+W\+\_\+\+P\+L\+U\+G\+I\+N\+\_\+\+C\+L\+A\+S\+S\+\_\+\+C\+R\+E\+A\+TE}!class\+\_\+export.\+h@{class\+\_\+export.\+h}}
+\subsubsection[{\texorpdfstring{O\+W\+\_\+\+P\+L\+U\+G\+I\+N\+\_\+\+C\+L\+A\+S\+S\+\_\+\+C\+R\+E\+A\+TE}{OW_PLUGIN_CLASS_CREATE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define O\+W\+\_\+\+P\+L\+U\+G\+I\+N\+\_\+\+C\+L\+A\+S\+S\+\_\+\+C\+R\+E\+A\+TE(
+\begin{DoxyParamCaption}
+\item[{}]{Class}
+\end{DoxyParamCaption}
+)}\hypertarget{class__export_8h_afe2f010a85f8f930d43d2eb130e10c48}{}\label{class__export_8h_afe2f010a85f8f930d43d2eb130e10c48}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keyword}{extern} \textcolor{stringliteral}{"C"} \(\backslash\)
+\{ \(\backslash\)
+  void* create() \(\backslash\)
+  \{ \(\backslash\)
+    Class* ptr = \textcolor{keyword}{new} Class; \(\backslash\)
+    return \textcolor{keyword}{static\_cast<}\hyperlink{classow__core_1_1IGenericClass}{ow\_core::IGenericClass}*\textcolor{keyword}{>}(ptr); \(\backslash\)
+  \} \(\backslash\)
+\}
+\end{DoxyCode}
+
+
+A macro that creates the create factory function for the {\itshape Class}. 
+
+N\+O\+TE\+: the static\+\_\+cast from \textquotesingle{}Class$\ast$\textquotesingle{} to \textquotesingle{}I\+Generic\+Class$\ast$\textquotesingle{} is essential. The void$\ast$ is casted back with reinterpret\+\_\+cast to \textquotesingle{}I\+Generic\+Class$\ast$\textquotesingle{}. This fails with seg fault when not previously using static\+\_\+cast.
+
+N\+O\+TE\+: the upcasting from \textquotesingle{}I\+Generic\+Class$\ast$\textquotesingle{} to \textquotesingle{}Class$\ast$\textquotesingle{} must be again done with static\+\_\+cast!
+
+N\+O\+TE\+: Use this macro only once per .so file! \index{class\+\_\+export.\+h@{class\+\_\+export.\+h}!O\+W\+\_\+\+P\+L\+U\+G\+I\+N\+\_\+\+C\+L\+A\+S\+S\+\_\+\+D\+E\+S\+T\+R\+OY@{O\+W\+\_\+\+P\+L\+U\+G\+I\+N\+\_\+\+C\+L\+A\+S\+S\+\_\+\+D\+E\+S\+T\+R\+OY}}
+\index{O\+W\+\_\+\+P\+L\+U\+G\+I\+N\+\_\+\+C\+L\+A\+S\+S\+\_\+\+D\+E\+S\+T\+R\+OY@{O\+W\+\_\+\+P\+L\+U\+G\+I\+N\+\_\+\+C\+L\+A\+S\+S\+\_\+\+D\+E\+S\+T\+R\+OY}!class\+\_\+export.\+h@{class\+\_\+export.\+h}}
+\subsubsection[{\texorpdfstring{O\+W\+\_\+\+P\+L\+U\+G\+I\+N\+\_\+\+C\+L\+A\+S\+S\+\_\+\+D\+E\+S\+T\+R\+OY}{OW_PLUGIN_CLASS_DESTROY}}]{\setlength{\rightskip}{0pt plus 5cm}\#define O\+W\+\_\+\+P\+L\+U\+G\+I\+N\+\_\+\+C\+L\+A\+S\+S\+\_\+\+D\+E\+S\+T\+R\+OY(
+\begin{DoxyParamCaption}
+\item[{}]{Class}
+\end{DoxyParamCaption}
+)}\hypertarget{class__export_8h_aebbebccd30e390c223415cbb40e4a9b9}{}\label{class__export_8h_aebbebccd30e390c223415cbb40e4a9b9}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keyword}{extern} \textcolor{stringliteral}{"C"} \(\backslash\)
+\{ \(\backslash\)
+  void destroy(\textcolor{keywordtype}{void}* ptr) \(\backslash\)
+  \{ \(\backslash\)
+    ow\_core::IGenericClass* g = \textcolor{keyword}{reinterpret\_cast<}\hyperlink{classow__core_1_1IGenericClass}{ow\_core::IGenericClass}*\textcolor{keyword}{>}(ptr); \(\backslash\)
+    Class* c = \textcolor{keyword}{static\_cast<}Class*\textcolor{keyword}{>}(g); \(\backslash\)
+    delete c; \(\backslash\)
+  \} \(\backslash\)
+\}
+\end{DoxyCode}
+
+
+A macro that creates the destroy factory function for the {\itshape Class}. 
+
+N\+O\+TE\+: The destruction should run from top to down (should be less error prone than down to top).
+
+N\+O\+TE\+: Since classes should be created by the factory they should also be deleted by the factory to avoid memory corruptions when the .so file has been compiled with a different compiler (version) then the loader of the .so file.
+
+N\+O\+TE\+: Use this macro only once per .so file! 

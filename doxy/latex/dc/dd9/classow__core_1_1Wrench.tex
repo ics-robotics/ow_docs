@@ -1,0 +1,109 @@
+\hypertarget{classow__core_1_1Wrench}{}\section{ow\+\_\+core\+:\+:Wrench$<$ \+\_\+\+Scalar $>$ Class Template Reference}
+\label{classow__core_1_1Wrench}\index{ow\+\_\+core\+::\+Wrench$<$ \+\_\+\+Scalar $>$@{ow\+\_\+core\+::\+Wrench$<$ \+\_\+\+Scalar $>$}}
+
+
+The \hyperlink{classow__core_1_1Wrench}{Wrench} class.  
+
+
+
+
+{\ttfamily \#include $<$wrench.\+h$>$}
+
+Inheritance diagram for ow\+\_\+core\+:\+:Wrench$<$ \+\_\+\+Scalar $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{dc/dd9/classow__core_1_1Wrench}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \+\_\+\+Scalar {\bfseries Scalar}\hypertarget{classow__core_1_1Wrench_af462e5302ef95be5f70d5a7889c994ca}{}\label{classow__core_1_1Wrench_af462e5302ef95be5f70d5a7889c994ca}
+
+\item 
+typedef Eigen\+::\+Matrix$<$ Scalar, 6, 1 $>$ {\bfseries Base}\hypertarget{classow__core_1_1Wrench_a493b8a5d84ade9788815b5967f67774a}{}\label{classow__core_1_1Wrench_a493b8a5d84ade9788815b5967f67774a}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__core_1_1Wrench_a3b052077efbd8a5029346ffb3507ab92}{Wrench} ()\hypertarget{classow__core_1_1Wrench_a3b052077efbd8a5029346ffb3507ab92}{}\label{classow__core_1_1Wrench_a3b052077efbd8a5029346ffb3507ab92}
+
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Other\+Derived $>$ }\\\hyperlink{classow__core_1_1Wrench_a78e79150a8f7377ff4cb9be4f203a20d}{Wrench} (const Eigen\+::\+Eigen\+Base$<$ Other\+Derived $>$ \&other)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1Wrench_a57d2dfb70214e79f720d064124a8e102}{Wrench} (const geometry\+\_\+msgs\+::\+Wrench \&other)\hypertarget{classow__core_1_1Wrench_a57d2dfb70214e79f720d064124a8e102}{}\label{classow__core_1_1Wrench_a57d2dfb70214e79f720d064124a8e102}
+
+\begin{DoxyCompactList}\small\item\em Copy constructor form geometry\+\_\+msgs\+::\+Wrench. \end{DoxyCompactList}\item 
+void \hyperlink{classow__core_1_1Wrench_a8fcbb87b2ff0e2c7742def7ac08903ba}{operator=} (const geometry\+\_\+msgs\+::\+Wrench \&W)\hypertarget{classow__core_1_1Wrench_a8fcbb87b2ff0e2c7742def7ac08903ba}{}\label{classow__core_1_1Wrench_a8fcbb87b2ff0e2c7742def7ac08903ba}
+
+\begin{DoxyCompactList}\small\item\em Assignment form geometry\+\_\+msgs\+::\+Wrench. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1Wrench_a08aa041f5fc3fbe34dbede0807d10e1e}{operator geometry\+\_\+msgs\+::\+Wrench} () const \hypertarget{classow__core_1_1Wrench_a08aa041f5fc3fbe34dbede0807d10e1e}{}\label{classow__core_1_1Wrench_a08aa041f5fc3fbe34dbede0807d10e1e}
+
+\begin{DoxyCompactList}\small\item\em Conversion to geometry\+\_\+msgs\+::\+Twist. \end{DoxyCompactList}\item 
+geometry\+\_\+msgs\+::\+Wrench \hyperlink{classow__core_1_1Wrench_a304d746f248d1503c41c3dde2d4bb674}{to\+Wrench\+Msg} () const \hypertarget{classow__core_1_1Wrench_a304d746f248d1503c41c3dde2d4bb674}{}\label{classow__core_1_1Wrench_a304d746f248d1503c41c3dde2d4bb674}
+
+\begin{DoxyCompactList}\small\item\em Conversion to geometry\+\_\+msgs\+::\+Twist. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1ForceRef}{Force\+Ref}$<$ Base $>$ \hyperlink{classow__core_1_1Wrench_a1280c591f4fc192916f6398d92074870}{force} ()\hypertarget{classow__core_1_1Wrench_a1280c591f4fc192916f6398d92074870}{}\label{classow__core_1_1Wrench_a1280c591f4fc192916f6398d92074870}
+
+\begin{DoxyCompactList}\small\item\em access to linear part \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1ForceRef}{Force\+Ref}$<$ const Base $>$ \hyperlink{classow__core_1_1Wrench_a4e8dce56464223a729052e6ad83dbe52}{force} () const \hypertarget{classow__core_1_1Wrench_a4e8dce56464223a729052e6ad83dbe52}{}\label{classow__core_1_1Wrench_a4e8dce56464223a729052e6ad83dbe52}
+
+\begin{DoxyCompactList}\small\item\em const access to linear part \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1MomentRef}{Moment\+Ref}$<$ Base $>$ \hyperlink{classow__core_1_1Wrench_a8ce23dd81a3aaffc0298531f785647de}{moment} ()\hypertarget{classow__core_1_1Wrench_a8ce23dd81a3aaffc0298531f785647de}{}\label{classow__core_1_1Wrench_a8ce23dd81a3aaffc0298531f785647de}
+
+\begin{DoxyCompactList}\small\item\em access to angular part \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1MomentRef}{Moment\+Ref}$<$ const Base $>$ \hyperlink{classow__core_1_1Wrench_a2cddfa50e6078ff59f3bbcbb36bace2d}{moment} () const \hypertarget{classow__core_1_1Wrench_a2cddfa50e6078ff59f3bbcbb36bace2d}{}\label{classow__core_1_1Wrench_a2cddfa50e6078ff59f3bbcbb36bace2d}
+
+\begin{DoxyCompactList}\small\item\em const access to angular part \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classow__core_1_1Wrench_a5b9957b13debc043deab64b5f5467504}{to\+String} () const \hypertarget{classow__core_1_1Wrench_a5b9957b13debc043deab64b5f5467504}{}\label{classow__core_1_1Wrench_a5b9957b13debc043deab64b5f5467504}
+
+\begin{DoxyCompactList}\small\item\em Conversion to std\+::string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static const \hyperlink{classow__core_1_1Wrench}{Wrench} \& \hyperlink{classow__core_1_1Wrench_a3dc8f10073ab93f15eb839b2a0fef07e}{Default} ()
+\begin{DoxyCompactList}\small\item\em Construct as Default. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename \+\_\+\+Scalar$>$\\*
+class ow\+\_\+core\+::\+Wrench$<$ \+\_\+\+Scalar $>$}
+
+The \hyperlink{classow__core_1_1Wrench}{Wrench} class. 
+
+The \hyperlink{classow__core_1_1Wrench}{Wrench} is of type Eigen\+::\+Vector6 and is represented by the math symbol $\mathbf{W}$.
+
+Stores the force and moment in a 6 dimensional vector. The force is represented by the first three elements. The moment velocity by the last three elements. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{ow\+\_\+core\+::\+Wrench@{ow\+\_\+core\+::\+Wrench}!Wrench@{Wrench}}
+\index{Wrench@{Wrench}!ow\+\_\+core\+::\+Wrench@{ow\+\_\+core\+::\+Wrench}}
+\subsubsection[{\texorpdfstring{Wrench(const Eigen\+::\+Eigen\+Base$<$ Other\+Derived $>$ \&other)}{Wrench(const Eigen::EigenBase< OtherDerived > &other)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar$>$ template$<$typename Other\+Derived $>$ {\bf ow\+\_\+core\+::\+Wrench}$<$ \+\_\+\+Scalar $>$\+::{\bf Wrench} (
+\begin{DoxyParamCaption}
+\item[{const Eigen\+::\+Eigen\+Base$<$ Other\+Derived $>$ \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classow__core_1_1Wrench_a78e79150a8f7377ff4cb9be4f203a20d}{}\label{classow__core_1_1Wrench_a78e79150a8f7377ff4cb9be4f203a20d}
+
+
+Copy constructor. 
+
+This copy constructor not only works with Eigen matrices but also with their expressions. 
+
+\subsection{Member Function Documentation}
+\index{ow\+\_\+core\+::\+Wrench@{ow\+\_\+core\+::\+Wrench}!Default@{Default}}
+\index{Default@{Default}!ow\+\_\+core\+::\+Wrench@{ow\+\_\+core\+::\+Wrench}}
+\subsubsection[{\texorpdfstring{Default()}{Default()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar$>$ static const {\bf Wrench}\& {\bf ow\+\_\+core\+::\+Wrench}$<$ \+\_\+\+Scalar $>$\+::Default (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classow__core_1_1Wrench_a3dc8f10073ab93f15eb839b2a0fef07e}{}\label{classow__core_1_1Wrench_a3dc8f10073ab93f15eb839b2a0fef07e}
+
+
+Construct as Default. 
+
+Default is Zero. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/dean/ros/workspaces/ow\+\_\+test\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/\hyperlink{wrench_8h}{wrench.\+h}\end{DoxyCompactItemize}

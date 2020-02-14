@@ -1,0 +1,109 @@
+\hypertarget{classow__core_1_1CartesianVelocity}{}\section{ow\+\_\+core\+:\+:Cartesian\+Velocity$<$ \+\_\+\+Scalar $>$ Class Template Reference}
+\label{classow__core_1_1CartesianVelocity}\index{ow\+\_\+core\+::\+Cartesian\+Velocity$<$ \+\_\+\+Scalar $>$@{ow\+\_\+core\+::\+Cartesian\+Velocity$<$ \+\_\+\+Scalar $>$}}
+
+
+The \hyperlink{classow__core_1_1CartesianVelocity}{Cartesian\+Velocity} class.  
+
+
+
+
+{\ttfamily \#include $<$cartesian\+\_\+velocity.\+h$>$}
+
+Inheritance diagram for ow\+\_\+core\+:\+:Cartesian\+Velocity$<$ \+\_\+\+Scalar $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d5/df0/classow__core_1_1CartesianVelocity}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \+\_\+\+Scalar {\bfseries Scalar}\hypertarget{classow__core_1_1CartesianVelocity_a30fbc2ff4d9a2902e22c1013d5c79adf}{}\label{classow__core_1_1CartesianVelocity_a30fbc2ff4d9a2902e22c1013d5c79adf}
+
+\item 
+typedef Eigen\+::\+Matrix$<$ Scalar, 6, 1 $>$ {\bfseries Base}\hypertarget{classow__core_1_1CartesianVelocity_afb19f3c2efe2446b76a716a0809e960f}{}\label{classow__core_1_1CartesianVelocity_afb19f3c2efe2446b76a716a0809e960f}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__core_1_1CartesianVelocity_a9101c643b5b96005b9fa87439c6bf805}{Cartesian\+Velocity} ()\hypertarget{classow__core_1_1CartesianVelocity_a9101c643b5b96005b9fa87439c6bf805}{}\label{classow__core_1_1CartesianVelocity_a9101c643b5b96005b9fa87439c6bf805}
+
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Other\+Derived $>$ }\\\hyperlink{classow__core_1_1CartesianVelocity_a3b2f280aae9e691e428c6317aa608d61}{Cartesian\+Velocity} (const Eigen\+::\+Eigen\+Base$<$ Other\+Derived $>$ \&other)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1CartesianVelocity_a941e816cd2c1aacaef90fa02f75b2433}{Cartesian\+Velocity} (const geometry\+\_\+msgs\+::\+Twist \&other)\hypertarget{classow__core_1_1CartesianVelocity_a941e816cd2c1aacaef90fa02f75b2433}{}\label{classow__core_1_1CartesianVelocity_a941e816cd2c1aacaef90fa02f75b2433}
+
+\begin{DoxyCompactList}\small\item\em Copy constructor form geometry\+\_\+msgs\+::\+Twist. \end{DoxyCompactList}\item 
+void \hyperlink{classow__core_1_1CartesianVelocity_ac4abf76a3ffb12d811c7ede84aeb0281}{operator=} (const geometry\+\_\+msgs\+::\+Twist \&Xp)\hypertarget{classow__core_1_1CartesianVelocity_ac4abf76a3ffb12d811c7ede84aeb0281}{}\label{classow__core_1_1CartesianVelocity_ac4abf76a3ffb12d811c7ede84aeb0281}
+
+\begin{DoxyCompactList}\small\item\em Assignment form geometry\+\_\+msgs\+::\+Twist. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1CartesianVelocity_ad3566f959c904cf22a4f1228290f8c15}{operator geometry\+\_\+msgs\+::\+Twist} () const \hypertarget{classow__core_1_1CartesianVelocity_ad3566f959c904cf22a4f1228290f8c15}{}\label{classow__core_1_1CartesianVelocity_ad3566f959c904cf22a4f1228290f8c15}
+
+\begin{DoxyCompactList}\small\item\em Conversion to geometry\+\_\+msgs\+::\+Twist. \end{DoxyCompactList}\item 
+geometry\+\_\+msgs\+::\+Twist \hyperlink{classow__core_1_1CartesianVelocity_a554aac9c93626cd576444a4fead7ac7f}{to\+Twist\+Msg} () const \hypertarget{classow__core_1_1CartesianVelocity_a554aac9c93626cd576444a4fead7ac7f}{}\label{classow__core_1_1CartesianVelocity_a554aac9c93626cd576444a4fead7ac7f}
+
+\begin{DoxyCompactList}\small\item\em Conversion to geometry\+\_\+msgs\+::\+Twist. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1LinearVelocityRef}{Linear\+Velocity\+Ref}$<$ Base $>$ \hyperlink{classow__core_1_1CartesianVelocity_acdd527df069a117b5395e0e667b5a267}{linear} ()\hypertarget{classow__core_1_1CartesianVelocity_acdd527df069a117b5395e0e667b5a267}{}\label{classow__core_1_1CartesianVelocity_acdd527df069a117b5395e0e667b5a267}
+
+\begin{DoxyCompactList}\small\item\em access to linear part \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1LinearVelocityRef}{Linear\+Velocity\+Ref}$<$ const Base $>$ \hyperlink{classow__core_1_1CartesianVelocity_a06fd2a41cffc8c2b469254befd4d5e18}{linear} () const \hypertarget{classow__core_1_1CartesianVelocity_a06fd2a41cffc8c2b469254befd4d5e18}{}\label{classow__core_1_1CartesianVelocity_a06fd2a41cffc8c2b469254befd4d5e18}
+
+\begin{DoxyCompactList}\small\item\em const access to linear part \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1AngularVelocityRef}{Angular\+Velocity\+Ref}$<$ Base $>$ \hyperlink{classow__core_1_1CartesianVelocity_adc8e89cb3eeb678bc74061c696bbd30d}{angular} ()\hypertarget{classow__core_1_1CartesianVelocity_adc8e89cb3eeb678bc74061c696bbd30d}{}\label{classow__core_1_1CartesianVelocity_adc8e89cb3eeb678bc74061c696bbd30d}
+
+\begin{DoxyCompactList}\small\item\em access to angular part \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1AngularVelocityRef}{Angular\+Velocity\+Ref}$<$ const Base $>$ \hyperlink{classow__core_1_1CartesianVelocity_ab16fa37cdaada03fcb94ef0b2cd008aa}{angular} () const \hypertarget{classow__core_1_1CartesianVelocity_ab16fa37cdaada03fcb94ef0b2cd008aa}{}\label{classow__core_1_1CartesianVelocity_ab16fa37cdaada03fcb94ef0b2cd008aa}
+
+\begin{DoxyCompactList}\small\item\em const access to angular part \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classow__core_1_1CartesianVelocity_ae78d83f858be0085a2d564a84aa32722}{to\+String} () const \hypertarget{classow__core_1_1CartesianVelocity_ae78d83f858be0085a2d564a84aa32722}{}\label{classow__core_1_1CartesianVelocity_ae78d83f858be0085a2d564a84aa32722}
+
+\begin{DoxyCompactList}\small\item\em Conversion to std\+::string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static const \hyperlink{classow__core_1_1CartesianVelocity}{Cartesian\+Velocity}$<$ Scalar $>$ \& \hyperlink{classow__core_1_1CartesianVelocity_ab9823aafa0100aa054396668a32324c1}{Default} ()
+\begin{DoxyCompactList}\small\item\em Construct as Default. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename \+\_\+\+Scalar$>$\\*
+class ow\+\_\+core\+::\+Cartesian\+Velocity$<$ \+\_\+\+Scalar $>$}
+
+The \hyperlink{classow__core_1_1CartesianVelocity}{Cartesian\+Velocity} class. 
+
+The \hyperlink{classow__core_1_1CartesianVelocity}{Cartesian\+Velocity} is of type Eigen\+::\+Vector6 and is represented by the math symbol $\dot{\mathbf{X}}$.
+
+Stores the linear and angular velocity in a 6 dimensional vector. The linear velocity part is represented by the first three elements. The angular velocity by the last three elements. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{ow\+\_\+core\+::\+Cartesian\+Velocity@{ow\+\_\+core\+::\+Cartesian\+Velocity}!Cartesian\+Velocity@{Cartesian\+Velocity}}
+\index{Cartesian\+Velocity@{Cartesian\+Velocity}!ow\+\_\+core\+::\+Cartesian\+Velocity@{ow\+\_\+core\+::\+Cartesian\+Velocity}}
+\subsubsection[{\texorpdfstring{Cartesian\+Velocity(const Eigen\+::\+Eigen\+Base$<$ Other\+Derived $>$ \&other)}{CartesianVelocity(const Eigen::EigenBase< OtherDerived > &other)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar $>$ template$<$typename Other\+Derived $>$ {\bf ow\+\_\+core\+::\+Cartesian\+Velocity}$<$ \+\_\+\+Scalar $>$\+::{\bf Cartesian\+Velocity} (
+\begin{DoxyParamCaption}
+\item[{const Eigen\+::\+Eigen\+Base$<$ Other\+Derived $>$ \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classow__core_1_1CartesianVelocity_a3b2f280aae9e691e428c6317aa608d61}{}\label{classow__core_1_1CartesianVelocity_a3b2f280aae9e691e428c6317aa608d61}
+
+
+Copy constructor. 
+
+This copy constructor not only works with Eigen matrices but also with their expressions. 
+
+\subsection{Member Function Documentation}
+\index{ow\+\_\+core\+::\+Cartesian\+Velocity@{ow\+\_\+core\+::\+Cartesian\+Velocity}!Default@{Default}}
+\index{Default@{Default}!ow\+\_\+core\+::\+Cartesian\+Velocity@{ow\+\_\+core\+::\+Cartesian\+Velocity}}
+\subsubsection[{\texorpdfstring{Default()}{Default()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar $>$ static const {\bf Cartesian\+Velocity}$<$Scalar$>$\& {\bf ow\+\_\+core\+::\+Cartesian\+Velocity}$<$ \+\_\+\+Scalar $>$\+::Default (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classow__core_1_1CartesianVelocity_ab9823aafa0100aa054396668a32324c1}{}\label{classow__core_1_1CartesianVelocity_ab9823aafa0100aa054396668a32324c1}
+
+
+Construct as Default. 
+
+Default is Identity 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/dean/ros/workspaces/ow\+\_\+test\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/\hyperlink{cartesian__velocity_8h}{cartesian\+\_\+velocity.\+h}\end{DoxyCompactItemize}

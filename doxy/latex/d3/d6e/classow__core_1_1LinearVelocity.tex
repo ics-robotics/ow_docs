@@ -1,0 +1,73 @@
+\hypertarget{classow__core_1_1LinearVelocity}{}\section{ow\+\_\+core\+:\+:Linear\+Velocity$<$ \+\_\+\+Scalar $>$ Class Template Reference}
+\label{classow__core_1_1LinearVelocity}\index{ow\+\_\+core\+::\+Linear\+Velocity$<$ \+\_\+\+Scalar $>$@{ow\+\_\+core\+::\+Linear\+Velocity$<$ \+\_\+\+Scalar $>$}}
+
+
+The \hyperlink{classow__core_1_1LinearVelocity}{Linear\+Velocity} class.  
+
+
+
+
+{\ttfamily \#include $<$linear\+\_\+velocity.\+h$>$}
+
+Inheritance diagram for ow\+\_\+core\+:\+:Linear\+Velocity$<$ \+\_\+\+Scalar $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{d3/d6e/classow__core_1_1LinearVelocity}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \+\_\+\+Scalar {\bfseries Scalar}\hypertarget{classow__core_1_1LinearVelocity_a088145bea5e0ce67c36e3704f2d302b1}{}\label{classow__core_1_1LinearVelocity_a088145bea5e0ce67c36e3704f2d302b1}
+
+\item 
+typedef Eigen\+::\+Matrix$<$ \+\_\+\+Scalar, 3, 1 $>$ {\bfseries Derived}\hypertarget{classow__core_1_1LinearVelocity_ae8c201d9e6bfb9758c8d65fd323e6176}{}\label{classow__core_1_1LinearVelocity_ae8c201d9e6bfb9758c8d65fd323e6176}
+
+\item 
+typedef \hyperlink{classow__core_1_1LinearVelocityRef}{Linear\+Velocity\+Ref}$<$ Derived $>$ {\bfseries Base}\hypertarget{classow__core_1_1LinearVelocity_a8f6f9c2d4861093ae198754313d8f4f5}{}\label{classow__core_1_1LinearVelocity_a8f6f9c2d4861093ae198754313d8f4f5}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__core_1_1LinearVelocity_af76f6ab631d054f1c09e791197508f7c}{Linear\+Velocity} ()\hypertarget{classow__core_1_1LinearVelocity_af76f6ab631d054f1c09e791197508f7c}{}\label{classow__core_1_1LinearVelocity_af76f6ab631d054f1c09e791197508f7c}
+
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1LinearVelocity_a6f4035dbcbcf049bbf20634ec61db290}{Linear\+Velocity} (const Scalar \&x, const Scalar \&y, const Scalar \&z)\hypertarget{classow__core_1_1LinearVelocity_a6f4035dbcbcf049bbf20634ec61db290}{}\label{classow__core_1_1LinearVelocity_a6f4035dbcbcf049bbf20634ec61db290}
+
+\begin{DoxyCompactList}\small\item\em Assignment from Scalar values. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Other\+Derived $>$ }\\\hyperlink{classow__core_1_1LinearVelocity_abf23b69f78de0e66c5df1d928162ce8f}{Linear\+Velocity} (const Eigen\+::\+Eigen\+Base$<$ Other\+Derived $>$ \&other)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Derived {\bfseries data\+\_\+}\hypertarget{classow__core_1_1LinearVelocity_a6d1422dafd1952572ddf3fff4dd45630}{}\label{classow__core_1_1LinearVelocity_a6d1422dafd1952572ddf3fff4dd45630}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename \+\_\+\+Scalar$>$\\*
+class ow\+\_\+core\+::\+Linear\+Velocity$<$ \+\_\+\+Scalar $>$}
+
+The \hyperlink{classow__core_1_1LinearVelocity}{Linear\+Velocity} class. 
+
+The \hyperlink{classow__core_1_1LinearVelocity}{Linear\+Velocity} is of type Eigen\+::\+Vector3 and is represented by the math symbol $\dot{\mathbf{x}}$. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{ow\+\_\+core\+::\+Linear\+Velocity@{ow\+\_\+core\+::\+Linear\+Velocity}!Linear\+Velocity@{Linear\+Velocity}}
+\index{Linear\+Velocity@{Linear\+Velocity}!ow\+\_\+core\+::\+Linear\+Velocity@{ow\+\_\+core\+::\+Linear\+Velocity}}
+\subsubsection[{\texorpdfstring{Linear\+Velocity(const Eigen\+::\+Eigen\+Base$<$ Other\+Derived $>$ \&other)}{LinearVelocity(const Eigen::EigenBase< OtherDerived > &other)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar $>$ template$<$typename Other\+Derived $>$ {\bf ow\+\_\+core\+::\+Linear\+Velocity}$<$ \+\_\+\+Scalar $>$\+::{\bf Linear\+Velocity} (
+\begin{DoxyParamCaption}
+\item[{const Eigen\+::\+Eigen\+Base$<$ Other\+Derived $>$ \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classow__core_1_1LinearVelocity_abf23b69f78de0e66c5df1d928162ce8f}{}\label{classow__core_1_1LinearVelocity_abf23b69f78de0e66c5df1d928162ce8f}
+
+
+Copy constructor. 
+
+This copy constructor not only works with Eigen matrices but also with their expressions. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/dean/ros/workspaces/ow\+\_\+test\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/\hyperlink{linear__velocity_8h}{linear\+\_\+velocity.\+h}\end{DoxyCompactItemize}

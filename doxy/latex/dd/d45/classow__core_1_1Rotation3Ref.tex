@@ -1,0 +1,101 @@
+\hypertarget{classow__core_1_1Rotation3Ref}{}\section{ow\+\_\+core\+:\+:Rotation3\+Ref$<$ \+\_\+\+Derived $>$ Class Template Reference}
+\label{classow__core_1_1Rotation3Ref}\index{ow\+\_\+core\+::\+Rotation3\+Ref$<$ \+\_\+\+Derived $>$@{ow\+\_\+core\+::\+Rotation3\+Ref$<$ \+\_\+\+Derived $>$}}
+
+
+The \hyperlink{classow__core_1_1Rotation3Ref}{Rotation3\+Ref} class.  
+
+
+
+
+{\ttfamily \#include $<$rotation3\+\_\+ref.\+h$>$}
+
+Inheritance diagram for ow\+\_\+core\+:\+:Rotation3\+Ref$<$ \+\_\+\+Derived $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{dd/d45/classow__core_1_1Rotation3Ref}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \+\_\+\+Derived {\bfseries Derived}\hypertarget{classow__core_1_1Rotation3Ref_a1997d14d4c8143247e57d9543375f613}{}\label{classow__core_1_1Rotation3Ref_a1997d14d4c8143247e57d9543375f613}
+
+\item 
+typedef \hyperlink{classow__core_1_1MatrixRef}{Matrix\+Ref}$<$ Derived, 3, 3 $>$ {\bfseries Base}\hypertarget{classow__core_1_1Rotation3Ref_a607f0e4b50d0a3b33152979f6b0fc6f9}{}\label{classow__core_1_1Rotation3Ref_a607f0e4b50d0a3b33152979f6b0fc6f9}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__core_1_1Rotation3Ref_a8835f31c0085b6e29af2df3358121b3a}{Rotation3\+Ref} (Derived \&ref, int start\+Row=0, int start\+Col=0)
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Other\+Derived $>$ }\\\hyperlink{classow__core_1_1Rotation3Ref}{Rotation3\+Ref} \& \hyperlink{classow__core_1_1Rotation3Ref_a9b31c385b6c5225f747ea08945642cb8}{operator=} (const Eigen\+::\+Rotation\+Base$<$ Other\+Derived, 3 $>$ \&r)\hypertarget{classow__core_1_1Rotation3Ref_a9b31c385b6c5225f747ea08945642cb8}{}\label{classow__core_1_1Rotation3Ref_a9b31c385b6c5225f747ea08945642cb8}
+
+\begin{DoxyCompactList}\small\item\em Assignment of Eigen\+::\+Rotation\+Base. \end{DoxyCompactList}\item 
+void \hyperlink{classow__core_1_1Rotation3Ref_a0b58716ea88baa8d13515bbe5ffe76f2}{operator=} (const tf\+::\+Quaternion \&q)\hypertarget{classow__core_1_1Rotation3Ref_a0b58716ea88baa8d13515bbe5ffe76f2}{}\label{classow__core_1_1Rotation3Ref_a0b58716ea88baa8d13515bbe5ffe76f2}
+
+\begin{DoxyCompactList}\small\item\em Assignment of tf\+::\+Quaternion. \end{DoxyCompactList}\item 
+void \hyperlink{classow__core_1_1Rotation3Ref_a4823dd9bcb419d9f92b1fce8f88d495a}{operator=} (const geometry\+\_\+msgs\+::\+Quaternion \&q)\hypertarget{classow__core_1_1Rotation3Ref_a4823dd9bcb419d9f92b1fce8f88d495a}{}\label{classow__core_1_1Rotation3Ref_a4823dd9bcb419d9f92b1fce8f88d495a}
+
+\begin{DoxyCompactList}\small\item\em Assignment of geometry\+\_\+msgs\+::\+Quaternion. \end{DoxyCompactList}\item 
+void \hyperlink{classow__core_1_1Rotation3Ref_a8f91b728de1db5da5775121c358e0521}{operator=} (const tf\+::\+Matrix3x3 \&R)\hypertarget{classow__core_1_1Rotation3Ref_a8f91b728de1db5da5775121c358e0521}{}\label{classow__core_1_1Rotation3Ref_a8f91b728de1db5da5775121c358e0521}
+
+\begin{DoxyCompactList}\small\item\em Assignment of tf\+::\+Matrix3x3. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1Rotation3Ref_ae7464db927a40cd9fbb5109169b7bb22}{operator tf\+::\+Quaternion} () const \hypertarget{classow__core_1_1Rotation3Ref_ae7464db927a40cd9fbb5109169b7bb22}{}\label{classow__core_1_1Rotation3Ref_ae7464db927a40cd9fbb5109169b7bb22}
+
+\begin{DoxyCompactList}\small\item\em Conversion to tf\+::\+Quaternion. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1Rotation3Ref_ae438d192b6b3d0d17331f26275370720}{operator geometry\+\_\+msgs\+::\+Quaternion} () const \hypertarget{classow__core_1_1Rotation3Ref_ae438d192b6b3d0d17331f26275370720}{}\label{classow__core_1_1Rotation3Ref_ae438d192b6b3d0d17331f26275370720}
+
+\begin{DoxyCompactList}\small\item\em Conversion to geometry\+\_\+msgs\+::\+Quaternion. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1Rotation3Ref_afc7e55ed5108a0ca56b6ef524be4962a}{operator tf\+::\+Matrix3x3} () const \hypertarget{classow__core_1_1Rotation3Ref_afc7e55ed5108a0ca56b6ef524be4962a}{}\label{classow__core_1_1Rotation3Ref_afc7e55ed5108a0ca56b6ef524be4962a}
+
+\begin{DoxyCompactList}\small\item\em Conversion to tf\+::\+Matrix3x3. \end{DoxyCompactList}\item 
+tf\+::\+Quaternion \hyperlink{classow__core_1_1Rotation3Ref_ad6db993cebda82f1b8f6d8ef78a498bf}{to\+Quaternion\+TF} ()\hypertarget{classow__core_1_1Rotation3Ref_ad6db993cebda82f1b8f6d8ef78a498bf}{}\label{classow__core_1_1Rotation3Ref_ad6db993cebda82f1b8f6d8ef78a498bf}
+
+\begin{DoxyCompactList}\small\item\em Conversion to tf\+::\+Quaternion. \end{DoxyCompactList}\item 
+geometry\+\_\+msgs\+::\+Quaternion \hyperlink{classow__core_1_1Rotation3Ref_a05ed8df1030e9d3370b6b25a03d5e140}{to\+Quaternion\+Msg} ()\hypertarget{classow__core_1_1Rotation3Ref_a05ed8df1030e9d3370b6b25a03d5e140}{}\label{classow__core_1_1Rotation3Ref_a05ed8df1030e9d3370b6b25a03d5e140}
+
+\begin{DoxyCompactList}\small\item\em Conversion to geometry\+\_\+msgs\+::\+Quaternion. \end{DoxyCompactList}\item 
+tf\+::\+Matrix3x3 \hyperlink{classow__core_1_1Rotation3Ref_ae0f85728772cde3bd954e7b86a4a4f22}{to\+Matrix\+TF} ()\hypertarget{classow__core_1_1Rotation3Ref_ae0f85728772cde3bd954e7b86a4a4f22}{}\label{classow__core_1_1Rotation3Ref_ae0f85728772cde3bd954e7b86a4a4f22}
+
+\begin{DoxyCompactList}\small\item\em Conversion to tf\+::\+Matrix3x3. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename \+\_\+\+Derived$>$\\*
+class ow\+\_\+core\+::\+Rotation3\+Ref$<$ \+\_\+\+Derived $>$}
+
+The \hyperlink{classow__core_1_1Rotation3Ref}{Rotation3\+Ref} class. 
+
+The \hyperlink{classow__core_1_1Rotation3}{Rotation3} is of type Eigen\+::\+Matrix3 and is represented by the math symbol $\mathbf{R}$.
+
+References the data of another Eigen type class via Eigen\+::\+Block. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{ow\+\_\+core\+::\+Rotation3\+Ref@{ow\+\_\+core\+::\+Rotation3\+Ref}!Rotation3\+Ref@{Rotation3\+Ref}}
+\index{Rotation3\+Ref@{Rotation3\+Ref}!ow\+\_\+core\+::\+Rotation3\+Ref@{ow\+\_\+core\+::\+Rotation3\+Ref}}
+\subsubsection[{\texorpdfstring{Rotation3\+Ref(\+Derived \&ref, int start\+Row=0, int start\+Col=0)}{Rotation3Ref(Derived &ref, int startRow=0, int startCol=0)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Derived$>$ {\bf ow\+\_\+core\+::\+Rotation3\+Ref}$<$ \+\_\+\+Derived $>$\+::{\bf Rotation3\+Ref} (
+\begin{DoxyParamCaption}
+\item[{Derived \&}]{ref, }
+\item[{int}]{start\+Row = {\ttfamily 0}, }
+\item[{int}]{start\+Col = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\hypertarget{classow__core_1_1Rotation3Ref_a8835f31c0085b6e29af2df3358121b3a}{}\label{classow__core_1_1Rotation3Ref_a8835f31c0085b6e29af2df3358121b3a}
+
+
+Default Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ref} & the reference to storage Eigen object to access the elements of the \hyperlink{classow__core_1_1LinearPosition}{Linear\+Position} via Eigen\+::\+Block.\\
+\hline
+{\em start\+Row} & the start index of the row for Eigen\+::\+Block.\\
+\hline
+{\em start\+Col} & the start index of the column for Eigen\+::\+Block. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/dean/ros/workspaces/ow\+\_\+test\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/\hyperlink{rotation3__ref_8h}{rotation3\+\_\+ref.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,145 @@
+\hypertarget{classow__core_1_1HomogeneousTransformation}{}\section{ow\+\_\+core\+:\+:Homogeneous\+Transformation$<$ \+\_\+\+Scalar $>$ Class Template Reference}
+\label{classow__core_1_1HomogeneousTransformation}\index{ow\+\_\+core\+::\+Homogeneous\+Transformation$<$ \+\_\+\+Scalar $>$@{ow\+\_\+core\+::\+Homogeneous\+Transformation$<$ \+\_\+\+Scalar $>$}}
+
+
+The \hyperlink{classow__core_1_1HomogeneousTransformation}{Homogeneous\+Transformation} class.  
+
+
+
+
+{\ttfamily \#include $<$homogeneous\+\_\+transformation.\+h$>$}
+
+Inheritance diagram for ow\+\_\+core\+:\+:Homogeneous\+Transformation$<$ \+\_\+\+Scalar $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d5/de4/classow__core_1_1HomogeneousTransformation}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \+\_\+\+Scalar {\bfseries Scalar}\hypertarget{classow__core_1_1HomogeneousTransformation_a831cf394e7c5ef71aa2384c942d353cc}{}\label{classow__core_1_1HomogeneousTransformation_a831cf394e7c5ef71aa2384c942d353cc}
+
+\item 
+typedef Eigen\+::\+Transform$<$ \+\_\+\+Scalar, 3, Eigen\+::\+Affine $>$ {\bfseries Base}\hypertarget{classow__core_1_1HomogeneousTransformation_a139a040b2aaf4205cd2ee48efcda3a5a}{}\label{classow__core_1_1HomogeneousTransformation_a139a040b2aaf4205cd2ee48efcda3a5a}
+
+\item 
+typedef Eigen\+::\+Transform$<$ \+\_\+\+Scalar, 3, Eigen\+::\+Affine $>$\+::Matrix\+Type {\bfseries Matrix}\hypertarget{classow__core_1_1HomogeneousTransformation_a1ce471e38a5056c8e97409a1c3bd9798}{}\label{classow__core_1_1HomogeneousTransformation_a1ce471e38a5056c8e97409a1c3bd9798}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__core_1_1HomogeneousTransformation_a6a2d52fc4ee38abbe480a6d5a8e5c773}{Homogeneous\+Transformation} ()\hypertarget{classow__core_1_1HomogeneousTransformation_a6a2d52fc4ee38abbe480a6d5a8e5c773}{}\label{classow__core_1_1HomogeneousTransformation_a6a2d52fc4ee38abbe480a6d5a8e5c773}
+
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1HomogeneousTransformation_ac1d8792424c0af25dffd0c7e38981caa}{Homogeneous\+Transformation} (const Base \&other)
+\begin{DoxyCompactList}\small\item\em Copy constructor from Eigen\+::\+Affine. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Other\+Derived $>$ }\\\hyperlink{classow__core_1_1HomogeneousTransformation_a453016dcb8a706ffb95abfd60a70f1df}{Homogeneous\+Transformation} (const Eigen\+::\+Eigen\+Base$<$ Other\+Derived $>$ \&other)
+\begin{DoxyCompactList}\small\item\em Copy constructor Other\+Derived. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1HomogeneousTransformation_a9def3964364fb962d1a69fe06686ee9e}{Homogeneous\+Transformation} (const typename Base\+::\+Translation\+Type \&other)\hypertarget{classow__core_1_1HomogeneousTransformation_a9def3964364fb962d1a69fe06686ee9e}{}\label{classow__core_1_1HomogeneousTransformation_a9def3964364fb962d1a69fe06686ee9e}
+
+\begin{DoxyCompactList}\small\item\em Copy constructor from Eigen\+::\+Transform\+::\+Translation. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Other\+Derived $>$ }\\\hyperlink{classow__core_1_1HomogeneousTransformation_a8ebeed0581c35b89d96a847f01bceddb}{Homogeneous\+Transformation} (const Eigen\+::\+Rotation\+Base$<$ Other\+Derived, 3 $>$ \&other)\hypertarget{classow__core_1_1HomogeneousTransformation_a8ebeed0581c35b89d96a847f01bceddb}{}\label{classow__core_1_1HomogeneousTransformation_a8ebeed0581c35b89d96a847f01bceddb}
+
+\begin{DoxyCompactList}\small\item\em Copy constructor from Eigen\+::\+Rotation\+Base. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1HomogeneousTransformation_a93c036ece8c23ef2fc7a9d38a59ff7e8}{Homogeneous\+Transformation} (const tf\+::\+Transform \&other)\hypertarget{classow__core_1_1HomogeneousTransformation_a93c036ece8c23ef2fc7a9d38a59ff7e8}{}\label{classow__core_1_1HomogeneousTransformation_a93c036ece8c23ef2fc7a9d38a59ff7e8}
+
+\begin{DoxyCompactList}\small\item\em Copy constructor from tf\+::\+Transform. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1HomogeneousTransformation_af4078447d97d97921a1cde705c661228}{Homogeneous\+Transformation} (const geometry\+\_\+msgs\+::\+Pose \&other)\hypertarget{classow__core_1_1HomogeneousTransformation_af4078447d97d97921a1cde705c661228}{}\label{classow__core_1_1HomogeneousTransformation_af4078447d97d97921a1cde705c661228}
+
+\begin{DoxyCompactList}\small\item\em Copy constructor from geometry\+\_\+msgs\+::\+Pose. \end{DoxyCompactList}\item 
+void \hyperlink{classow__core_1_1HomogeneousTransformation_a52c2ab8ad47f43b8c94a7d5576e8c842}{operator=} (const tf\+::\+Transform \&other)\hypertarget{classow__core_1_1HomogeneousTransformation_a52c2ab8ad47f43b8c94a7d5576e8c842}{}\label{classow__core_1_1HomogeneousTransformation_a52c2ab8ad47f43b8c94a7d5576e8c842}
+
+\begin{DoxyCompactList}\small\item\em Assignment form tf\+::\+Transform. \end{DoxyCompactList}\item 
+void \hyperlink{classow__core_1_1HomogeneousTransformation_a020a141fc151737a9671df9448e954a9}{operator=} (const geometry\+\_\+msgs\+::\+Pose \&other)\hypertarget{classow__core_1_1HomogeneousTransformation_a020a141fc151737a9671df9448e954a9}{}\label{classow__core_1_1HomogeneousTransformation_a020a141fc151737a9671df9448e954a9}
+
+\begin{DoxyCompactList}\small\item\em Assignment form geometry\+\_\+msgs\+::\+Pose. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1HomogeneousTransformation_a223412eca2309326b0f672a38c1e6a44}{operator tf\+::\+Transform} () const \hypertarget{classow__core_1_1HomogeneousTransformation_a223412eca2309326b0f672a38c1e6a44}{}\label{classow__core_1_1HomogeneousTransformation_a223412eca2309326b0f672a38c1e6a44}
+
+\begin{DoxyCompactList}\small\item\em Conversion to tf\+::\+Transform. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1HomogeneousTransformation_ad92f1c9512c6fcc000ac73abdba5a103}{operator geometry\+\_\+msgs\+::\+Pose} () const \hypertarget{classow__core_1_1HomogeneousTransformation_ad92f1c9512c6fcc000ac73abdba5a103}{}\label{classow__core_1_1HomogeneousTransformation_ad92f1c9512c6fcc000ac73abdba5a103}
+
+\begin{DoxyCompactList}\small\item\em Conversion to geometry\+\_\+msgs\+::\+Pose. \end{DoxyCompactList}\item 
+tf\+::\+Transform \hyperlink{classow__core_1_1HomogeneousTransformation_aeaf8eff278df891b098ea4bf1ce81cc9}{to\+Transform\+Tf} ()\hypertarget{classow__core_1_1HomogeneousTransformation_aeaf8eff278df891b098ea4bf1ce81cc9}{}\label{classow__core_1_1HomogeneousTransformation_aeaf8eff278df891b098ea4bf1ce81cc9}
+
+\begin{DoxyCompactList}\small\item\em Conversion to tf\+::\+Transform. \end{DoxyCompactList}\item 
+geometry\+\_\+msgs\+::\+Pose \hyperlink{classow__core_1_1HomogeneousTransformation_a32bd1fa2962cc71f8331fcfc39d55b2e}{to\+Pose\+Msg} ()\hypertarget{classow__core_1_1HomogeneousTransformation_a32bd1fa2962cc71f8331fcfc39d55b2e}{}\label{classow__core_1_1HomogeneousTransformation_a32bd1fa2962cc71f8331fcfc39d55b2e}
+
+\begin{DoxyCompactList}\small\item\em Conversion to geometry\+\_\+msgs\+::\+Pose. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1LinearPositionRef}{Linear\+Position\+Ref}$<$ Matrix $>$ \hyperlink{classow__core_1_1HomogeneousTransformation_a45c97f141777f691dbed43420d7d43e3}{position} ()\hypertarget{classow__core_1_1HomogeneousTransformation_a45c97f141777f691dbed43420d7d43e3}{}\label{classow__core_1_1HomogeneousTransformation_a45c97f141777f691dbed43420d7d43e3}
+
+\begin{DoxyCompactList}\small\item\em access to position part \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1LinearPositionRef}{Linear\+Position\+Ref}$<$ const Matrix $>$ \hyperlink{classow__core_1_1HomogeneousTransformation_ae2eecf2fd172b4da05031f94d3d050a7}{position} () const \hypertarget{classow__core_1_1HomogeneousTransformation_ae2eecf2fd172b4da05031f94d3d050a7}{}\label{classow__core_1_1HomogeneousTransformation_ae2eecf2fd172b4da05031f94d3d050a7}
+
+\begin{DoxyCompactList}\small\item\em const access to position part \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1Rotation3Ref}{Rotation3\+Ref}$<$ Matrix $>$ \hyperlink{classow__core_1_1HomogeneousTransformation_aae6ef9088cc07bfa5e3b76de5b2f9ede}{orientation} ()\hypertarget{classow__core_1_1HomogeneousTransformation_aae6ef9088cc07bfa5e3b76de5b2f9ede}{}\label{classow__core_1_1HomogeneousTransformation_aae6ef9088cc07bfa5e3b76de5b2f9ede}
+
+\begin{DoxyCompactList}\small\item\em access to orientation part \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1Rotation3Ref}{Rotation3\+Ref}$<$ const Matrix $>$ \hyperlink{classow__core_1_1HomogeneousTransformation_ab2dcd67527042fd99a7f47f539497cb8}{orientation} () const \hypertarget{classow__core_1_1HomogeneousTransformation_ab2dcd67527042fd99a7f47f539497cb8}{}\label{classow__core_1_1HomogeneousTransformation_ab2dcd67527042fd99a7f47f539497cb8}
+
+\begin{DoxyCompactList}\small\item\em const access to orientation part \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classow__core_1_1HomogeneousTransformation_a81377744bf29c6001680abdcd0f22f95}{to\+String} () const \hypertarget{classow__core_1_1HomogeneousTransformation_a81377744bf29c6001680abdcd0f22f95}{}\label{classow__core_1_1HomogeneousTransformation_a81377744bf29c6001680abdcd0f22f95}
+
+\begin{DoxyCompactList}\small\item\em Conversion to std\+::string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static const \hyperlink{classow__core_1_1HomogeneousTransformation}{Homogeneous\+Transformation}$<$ Scalar $>$ \& \hyperlink{classow__core_1_1HomogeneousTransformation_a7113d1a0875f4c8583321a7f3aeb7740}{Default} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename \+\_\+\+Scalar$>$\\*
+class ow\+\_\+core\+::\+Homogeneous\+Transformation$<$ \+\_\+\+Scalar $>$}
+
+The \hyperlink{classow__core_1_1HomogeneousTransformation}{Homogeneous\+Transformation} class. 
+
+The \hyperlink{classow__core_1_1HomogeneousTransformation}{Homogeneous\+Transformation} is of type Eigen\+::\+Transform and is represented by the math symbol $\mathbf{T}$.
+
+Stores the position and orientation information in a 4x4 dimensional matrix. The orientation part is represented as a 3x3 matrix in the upper left corner. The position part is represented as a 3 dimensional vector in the upper right corner. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{ow\+\_\+core\+::\+Homogeneous\+Transformation@{ow\+\_\+core\+::\+Homogeneous\+Transformation}!Homogeneous\+Transformation@{Homogeneous\+Transformation}}
+\index{Homogeneous\+Transformation@{Homogeneous\+Transformation}!ow\+\_\+core\+::\+Homogeneous\+Transformation@{ow\+\_\+core\+::\+Homogeneous\+Transformation}}
+\subsubsection[{\texorpdfstring{Homogeneous\+Transformation(const Base \&other)}{HomogeneousTransformation(const Base &other)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar $>$ {\bf ow\+\_\+core\+::\+Homogeneous\+Transformation}$<$ \+\_\+\+Scalar $>$\+::{\bf Homogeneous\+Transformation} (
+\begin{DoxyParamCaption}
+\item[{const Base \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classow__core_1_1HomogeneousTransformation_ac1d8792424c0af25dffd0c7e38981caa}{}\label{classow__core_1_1HomogeneousTransformation_ac1d8792424c0af25dffd0c7e38981caa}
+
+
+Copy constructor from Eigen\+::\+Affine. 
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000007}{Todo}]removed explicit to write\+: \hyperlink{classow__core_1_1HomogeneousTransformation}{Homogeneous\+Transformation} T = Eigen\+::\+Affine(...); \end{DoxyRefDesc}
+\index{ow\+\_\+core\+::\+Homogeneous\+Transformation@{ow\+\_\+core\+::\+Homogeneous\+Transformation}!Homogeneous\+Transformation@{Homogeneous\+Transformation}}
+\index{Homogeneous\+Transformation@{Homogeneous\+Transformation}!ow\+\_\+core\+::\+Homogeneous\+Transformation@{ow\+\_\+core\+::\+Homogeneous\+Transformation}}
+\subsubsection[{\texorpdfstring{Homogeneous\+Transformation(const Eigen\+::\+Eigen\+Base$<$ Other\+Derived $>$ \&other)}{HomogeneousTransformation(const Eigen::EigenBase< OtherDerived > &other)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar $>$ template$<$typename Other\+Derived $>$ {\bf ow\+\_\+core\+::\+Homogeneous\+Transformation}$<$ \+\_\+\+Scalar $>$\+::{\bf Homogeneous\+Transformation} (
+\begin{DoxyParamCaption}
+\item[{const Eigen\+::\+Eigen\+Base$<$ Other\+Derived $>$ \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classow__core_1_1HomogeneousTransformation_a453016dcb8a706ffb95abfd60a70f1df}{}\label{classow__core_1_1HomogeneousTransformation_a453016dcb8a706ffb95abfd60a70f1df}
+
+
+Copy constructor Other\+Derived. 
+
+This copy constructor not only works with Eigen matrices but also with their expressions. 
+
+\subsection{Member Function Documentation}
+\index{ow\+\_\+core\+::\+Homogeneous\+Transformation@{ow\+\_\+core\+::\+Homogeneous\+Transformation}!Default@{Default}}
+\index{Default@{Default}!ow\+\_\+core\+::\+Homogeneous\+Transformation@{ow\+\_\+core\+::\+Homogeneous\+Transformation}}
+\subsubsection[{\texorpdfstring{Default()}{Default()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar $>$ static const {\bf Homogeneous\+Transformation}$<$Scalar$>$\& {\bf ow\+\_\+core\+::\+Homogeneous\+Transformation}$<$ \+\_\+\+Scalar $>$\+::Default (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classow__core_1_1HomogeneousTransformation_a7113d1a0875f4c8583321a7f3aeb7740}{}\label{classow__core_1_1HomogeneousTransformation_a7113d1a0875f4c8583321a7f3aeb7740}
+
+
+Default constructor. 
+
+constructs as identity 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/dean/ros/workspaces/ow\+\_\+test\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/\hyperlink{homogeneous__transformation_8h}{homogeneous\+\_\+transformation.\+h}\end{DoxyCompactItemize}

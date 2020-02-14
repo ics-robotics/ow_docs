@@ -1,0 +1,116 @@
+\hypertarget{classow__core_1_1VectorDof}{}\section{ow\+\_\+core\+:\+:Vector\+Dof$<$ \+\_\+\+Scalar, \+\_\+\+Rows $>$ Class Template Reference}
+\label{classow__core_1_1VectorDof}\index{ow\+\_\+core\+::\+Vector\+Dof$<$ \+\_\+\+Scalar, \+\_\+\+Rows $>$@{ow\+\_\+core\+::\+Vector\+Dof$<$ \+\_\+\+Scalar, \+\_\+\+Rows $>$}}
+
+
+The \hyperlink{classow__core_1_1VectorDof}{Vector\+Dof} class.  
+
+
+
+
+{\ttfamily \#include $<$vector\+\_\+dof.\+h$>$}
+
+Inheritance diagram for ow\+\_\+core\+:\+:Vector\+Dof$<$ \+\_\+\+Scalar, \+\_\+\+Rows $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.458333cm]{d9/d10/classow__core_1_1VectorDof}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ {\bfseries Rows} = \+\_\+\+Rows
+ \}\hypertarget{classow__core_1_1VectorDof_a7c5a7ddd6224d55ca6c638399a160a17}{}\label{classow__core_1_1VectorDof_a7c5a7ddd6224d55ca6c638399a160a17}
+
+\item 
+typedef \+\_\+\+Scalar {\bfseries Scalar}\hypertarget{classow__core_1_1VectorDof_acf92659e64b4ee228fbf3ae573680655}{}\label{classow__core_1_1VectorDof_acf92659e64b4ee228fbf3ae573680655}
+
+\item 
+typedef Eigen\+::\+Matrix$<$ Scalar, Rows, 1 $>$ {\bfseries Base}\hypertarget{classow__core_1_1VectorDof_a797da821d2fab9e447eab836718293ef}{}\label{classow__core_1_1VectorDof_a797da821d2fab9e447eab836718293ef}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__core_1_1VectorDof_a488ac8cc1bfe0683f6d348eca855735d}{Vector\+Dof} ()\hypertarget{classow__core_1_1VectorDof_a488ac8cc1bfe0683f6d348eca855735d}{}\label{classow__core_1_1VectorDof_a488ac8cc1bfe0683f6d348eca855735d}
+
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Other\+Derived $>$ }\\\hyperlink{classow__core_1_1VectorDof_a52fb1369e02f8b20b6510f6bdef6ca12}{Vector\+Dof} (const Eigen\+::\+Eigen\+Base$<$ Other\+Derived $>$ \&other)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1VectorDof}{Vector\+Dof} \& {\bfseries set\+Constant} (const Scalar \&value)\hypertarget{classow__core_1_1VectorDof_acd67ace1b66bed1d51c0762dc62ba9a7}{}\label{classow__core_1_1VectorDof_acd67ace1b66bed1d51c0762dc62ba9a7}
+
+\item 
+\hyperlink{classow__core_1_1VectorDof}{Vector\+Dof} \& {\bfseries set\+Lin\+Spaced} (const Scalar \&low, const Scalar \&high)\hypertarget{classow__core_1_1VectorDof_a85cb5a00ad47f5d9046780b4e63271ac}{}\label{classow__core_1_1VectorDof_a85cb5a00ad47f5d9046780b4e63271ac}
+
+\item 
+\hyperlink{classow__core_1_1VectorDof}{Vector\+Dof} \& {\bfseries set\+Zero} ()\hypertarget{classow__core_1_1VectorDof_adb9403a5726589146cec53b98ce27a50}{}\label{classow__core_1_1VectorDof_adb9403a5726589146cec53b98ce27a50}
+
+\item 
+\hyperlink{classow__core_1_1VectorDof}{Vector\+Dof} \& {\bfseries set\+Ones} ()\hypertarget{classow__core_1_1VectorDof_a079291e0d1a46a048066ca31a4c52d7b}{}\label{classow__core_1_1VectorDof_a079291e0d1a46a048066ca31a4c52d7b}
+
+\item 
+\hyperlink{classow__core_1_1VectorDof}{Vector\+Dof} \& {\bfseries set\+Random} ()\hypertarget{classow__core_1_1VectorDof_a788e7aaeffb52db4a9fcb14ad84fc6eb}{}\label{classow__core_1_1VectorDof_a788e7aaeffb52db4a9fcb14ad84fc6eb}
+
+\item 
+std\+::string \hyperlink{classow__core_1_1VectorDof_aca0f060adbac385e9ef350947248041c}{to\+String} () const \hypertarget{classow__core_1_1VectorDof_aca0f060adbac385e9ef350947248041c}{}\label{classow__core_1_1VectorDof_aca0f060adbac385e9ef350947248041c}
+
+\begin{DoxyCompactList}\small\item\em Conversion to std\+::string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Base\+::\+Constant\+Return\+Type \hyperlink{classow__core_1_1VectorDof_a9e6be2c39b494db7b7d4ed62bdf6cbe3}{Zero} ()
+\begin{DoxyCompactList}\small\item\em Returns an expression where all coefficients equal zero. \end{DoxyCompactList}\item 
+static Base\+::\+Constant\+Return\+Type \hyperlink{classow__core_1_1VectorDof_abbb267905416971fa0edd4224f3cf428}{Ones} ()\hypertarget{classow__core_1_1VectorDof_abbb267905416971fa0edd4224f3cf428}{}\label{classow__core_1_1VectorDof_abbb267905416971fa0edd4224f3cf428}
+
+\begin{DoxyCompactList}\small\item\em Returns an expression where all coefficients equal one. \end{DoxyCompactList}\item 
+static Base\+::\+Constant\+Return\+Type \hyperlink{classow__core_1_1VectorDof_afa6d09d81da823ac3ea27b431a3e3a42}{Constant} (const Scalar \&value)\hypertarget{classow__core_1_1VectorDof_afa6d09d81da823ac3ea27b431a3e3a42}{}\label{classow__core_1_1VectorDof_afa6d09d81da823ac3ea27b431a3e3a42}
+
+\begin{DoxyCompactList}\small\item\em Returns an expression where all coefficients equal the given value. \end{DoxyCompactList}\item 
+static const Base\+::\+Random\+Return\+Type \hyperlink{classow__core_1_1VectorDof_af30f677b67b4b2a3d50dd58d17f13dd4}{Random} ()\hypertarget{classow__core_1_1VectorDof_af30f677b67b4b2a3d50dd58d17f13dd4}{}\label{classow__core_1_1VectorDof_af30f677b67b4b2a3d50dd58d17f13dd4}
+
+\begin{DoxyCompactList}\small\item\em Returns an expression where all coefficients are random. \end{DoxyCompactList}\item 
+static const Base\+::\+Basis\+Return\+Type \hyperlink{classow__core_1_1VectorDof_ac2f8c5af2c4ddab88a0c931b1b8f6b43}{Unit} (typename Base\+::\+Index i)\hypertarget{classow__core_1_1VectorDof_ac2f8c5af2c4ddab88a0c931b1b8f6b43}{}\label{classow__core_1_1VectorDof_ac2f8c5af2c4ddab88a0c931b1b8f6b43}
+
+\begin{DoxyCompactList}\small\item\em Returns an expression where all coefficients represent the i-\/th basis vector. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename \+\_\+\+Scalar, int \+\_\+\+Rows$>$\\*
+class ow\+\_\+core\+::\+Vector\+Dof$<$ \+\_\+\+Scalar, \+\_\+\+Rows $>$}
+
+The \hyperlink{classow__core_1_1VectorDof}{Vector\+Dof} class. 
+
+The \hyperlink{classow__core_1_1VectorDof}{Vector\+Dof} is of type Eigen\+::\+Matrix. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{ow\+\_\+core\+::\+Vector\+Dof@{ow\+\_\+core\+::\+Vector\+Dof}!Vector\+Dof@{Vector\+Dof}}
+\index{Vector\+Dof@{Vector\+Dof}!ow\+\_\+core\+::\+Vector\+Dof@{ow\+\_\+core\+::\+Vector\+Dof}}
+\subsubsection[{\texorpdfstring{Vector\+Dof(const Eigen\+::\+Eigen\+Base$<$ Other\+Derived $>$ \&other)}{VectorDof(const Eigen::EigenBase< OtherDerived > &other)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar, int \+\_\+\+Rows$>$ template$<$typename Other\+Derived $>$ {\bf ow\+\_\+core\+::\+Vector\+Dof}$<$ \+\_\+\+Scalar, \+\_\+\+Rows $>$\+::{\bf Vector\+Dof} (
+\begin{DoxyParamCaption}
+\item[{const Eigen\+::\+Eigen\+Base$<$ Other\+Derived $>$ \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classow__core_1_1VectorDof_a52fb1369e02f8b20b6510f6bdef6ca12}{}\label{classow__core_1_1VectorDof_a52fb1369e02f8b20b6510f6bdef6ca12}
+
+
+Copy constructor. 
+
+This copy constructor not only works with Eigen matrices but also with their expressions. 
+
+\subsection{Member Function Documentation}
+\index{ow\+\_\+core\+::\+Vector\+Dof@{ow\+\_\+core\+::\+Vector\+Dof}!Zero@{Zero}}
+\index{Zero@{Zero}!ow\+\_\+core\+::\+Vector\+Dof@{ow\+\_\+core\+::\+Vector\+Dof}}
+\subsubsection[{\texorpdfstring{Zero()}{Zero()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar, int \+\_\+\+Rows$>$ static Base\+::\+Constant\+Return\+Type {\bf ow\+\_\+core\+::\+Vector\+Dof}$<$ \+\_\+\+Scalar, \+\_\+\+Rows $>$\+::Zero (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classow__core_1_1VectorDof_a9e6be2c39b494db7b7d4ed62bdf6cbe3}{}\label{classow__core_1_1VectorDof_a9e6be2c39b494db7b7d4ed62bdf6cbe3}
+
+
+Returns an expression where all coefficients equal zero. 
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000012}{Todo}]Change all \hyperlink{classow__core_1_1VectorDof_a9e6be2c39b494db7b7d4ed62bdf6cbe3}{Zero()} etc. functions of ow types to use constant expressions, if necessary. \end{DoxyRefDesc}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/dean/ros/workspaces/ow\+\_\+test\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/\hyperlink{vector__dof_8h}{vector\+\_\+dof.\+h}\end{DoxyCompactItemize}

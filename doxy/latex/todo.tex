@@ -1,0 +1,36 @@
+
+\begin{DoxyRefList}
+\item[\label{todo__todo000005}%
+\hypertarget{todo__todo000005}{}%
+ Class \hyperlink{structEigen_1_1internal_1_1traits_3_01QuaternionRef_3_01__Derived_01_4_01_4}{Eigen\+:\+:internal\+:\+:traits$<$ Quaternion\+Ref$<$ \+\_\+\+Derived $>$ $>$} ]Maybe the Eigen\+::\+Block args should be parameters. One might want to select a column vector.  
+\item[\label{todo__todo000001}%
+\hypertarget{todo__todo000001}{}%
+Member \hyperlink{classow__core_1_1AngularPositionRef_a0c67d3e57001c3f4b47983c6e2113410}{ow\+\_\+core\+:\+:Angular\+Position\+Ref$<$ \+\_\+\+Derived $>$\+:\+:operator=} (const tf\+::\+Quaternion \&q)]Maybe call a static converion function. 
+\item[\label{todo__todo000003}%
+\hypertarget{todo__todo000003}{}%
+Member \hyperlink{classow__core_1_1CartesianPosition_a87716f0f5fd8a5ddfc1a18fb9205c4fe}{ow\+\_\+core\+:\+:Cartesian\+Position$<$ \+\_\+\+Scalar $>$\+:\+:Cartesian\+Position} (const Transform \&other)]\+: removed explicit to write things like\+: \hyperlink{classow__core_1_1CartesianPosition}{Cartesian\+Position} X = Eigen\+::\+Affine3d\+::\+Identity();  
+\item[\label{todo__todo000002}%
+\hypertarget{todo__todo000002}{}%
+Member \hyperlink{classow__core_1_1CartesianPosition_adf7c4725b0e7c01554d431f1277b7380}{ow\+\_\+core\+:\+:Cartesian\+Position$<$ \+\_\+\+Scalar $>$\+:\+:Identity} ()]maby expression  
+\item[\label{todo__todo000007}%
+\hypertarget{todo__todo000007}{}%
+Member \hyperlink{classow__core_1_1HomogeneousTransformation_ac1d8792424c0af25dffd0c7e38981caa}{ow\+\_\+core\+:\+:Homogeneous\+Transformation$<$ \+\_\+\+Scalar $>$\+:\+:Homogeneous\+Transformation} (const Base \&other)]removed explicit to write\+: \hyperlink{classow__core_1_1HomogeneousTransformation}{Homogeneous\+Transformation} T = Eigen\+::\+Affine(...);  
+\item[\label{todo__todo000008}%
+\hypertarget{todo__todo000008}{}%
+Class \hyperlink{classow__core_1_1IFootTrajectoryGenerator}{ow\+\_\+core\+:\+:I\+Foot\+Trajectory\+Generator} ]Remove forward declarations.  
+\item[\label{todo__todo000009}%
+\hypertarget{todo__todo000009}{}%
+Member \hyperlink{classow__core_1_1IFootTrajectoryGenerator_ac18698993d68a408ecb0820b1ce0cf4e}{ow\+\_\+core\+:\+:I\+Foot\+Trajectory\+Generator\+:\+:connect\+In\+Port\+Foot\+Step\+Planner} (const I\+Foot\+Step\+Planner\+Out\+Ports $\ast$fsp)=0]give specific pointer to other module ouput or the most general outport pointer? 
+\item[\label{todo__todo000010}%
+\hypertarget{todo__todo000010}{}%
+Member \hyperlink{classow__core_1_1IFootTrajectoryGenerator_ae592f6abe58e94f8197a4b29d4f52b6d}{ow\+\_\+core\+:\+:I\+Foot\+Trajectory\+Generator\+:\+:connect\+In\+Port\+Forward\+Kinematic} (const I\+Forward\+Kinematics\+Out\+Ports $\ast$fk)=0]give specific pointer to other module ouput or the most general outport pointer? 
+\item[\label{todo__todo000011}%
+\hypertarget{todo__todo000011}{}%
+Class \hyperlink{classow__core_1_1IRobot}{ow\+\_\+core\+:\+:I\+Robot} ]Remove forward declaration of I\+Inverse\+Kinematics\+Out\+Ports.  
+\item[\label{todo__todo000004}%
+\hypertarget{todo__todo000004}{}%
+Member \hyperlink{conversions_8h_ab69f6bd2757103d471a24f3c48c4d34b}{ow\+\_\+core\+:\+:vector3\+Eigen\+To\+Vector3\+Msg} (const Eigen\+::\+Matrix\+Base$<$ \+\_\+\+Derived $>$ \&e, geometry\+\_\+msgs\+::\+Vector3 \&t)]odd template syntax for cast$<$$>$()\+: \href{https://stackoverflow.com/questions/3786360/confusing-template-error}{\tt https\+://stackoverflow.\+com/questions/3786360/confusing-\/template-\/error}  
+\item[\label{todo__todo000012}%
+\hypertarget{todo__todo000012}{}%
+Member \hyperlink{classow__core_1_1VectorDof_a9e6be2c39b494db7b7d4ed62bdf6cbe3}{ow\+\_\+core\+:\+:Vector\+Dof$<$ \+\_\+\+Scalar, \+\_\+\+Rows $>$\+:\+:Zero} ()]Change all \hyperlink{classow__core_1_1VectorDof_a9e6be2c39b494db7b7d4ed62bdf6cbe3}{Zero()} etc. functions of ow types to use constant expressions, if necessary. 
+\end{DoxyRefList}
